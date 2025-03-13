@@ -4,770 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=8a4d06d4-80f0-4ae5-a41c-77a19d71bbdb" type="text/javascript"></script>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <main>
-        <!-- Для родственников -->
-         <section class="main-relatives">
-            <div class="container">
-                <div class="relatives-fon">
-                    <div class="relatives-fon_content">
-                        <div class="relatives-fon_content-all">
-                            <div class="relatives-fon_content-block">
-                                <div class="h1">Для родственников</div>
-                                <div class="text-m-32">Поддержка близких – важная часть процесса выздоровления. Мы помогаем вам оставаться в курсе и участвовать в реабилитации</div>
-                                <div class="relatives-block_checks">
-                                    <div class="text-m-24"><span class="check">
-                                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                            <g clip-path="url(#clip0_6831_848)">
-                                            <path d="M6.66675 16.0002L13.3334 22.6668L26.6667 9.3335" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_6831_848">
-                                            <rect width="32" height="32" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>Отслеживание динамики</div>
-                                    <div class="text-m-24"><span class="check check-oh">
-                                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                            <g clip-path="url(#clip0_6831_848)">
-                                            <path d="M6.66675 16.0002L13.3334 22.6668L26.6667 9.3335" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_6831_848">
-                                            <rect width="32" height="32" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>Группа поддержки для родственников</div>
-                                    <div class="text-m-24"><span class="check">
-                                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                            <g clip-path="url(#clip0_6831_848)">
-                                            <path d="M6.66675 16.0002L13.3334 22.6668L26.6667 9.3335" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_6831_848">
-                                            <rect width="32" height="32" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>Онлайн-консультации</div>
-                                    <div class="text-m-24"><span class="check">
-                                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                            <g clip-path="url(#clip0_6831_848)">
-                                            <path d="M6.66675 16.0002L13.3334 22.6668L26.6667 9.3335" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_6831_848">
-                                            <rect width="32" height="32" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>Очные встречи</div>
-                                    <div class="text-m-24"><span class="check">
-                                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                            <g clip-path="url(#clip0_6831_848)">
-                                            <path d="M6.66675 16.0002L13.3334 22.6668L26.6667 9.3335" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_6831_848">
-                                            <rect width="32" height="32" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>Групповой чат в мессенджерах</div>
-                                    <div class="text-m-24"><span class="check">
-                                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                            <g clip-path="url(#clip0_6831_848)">
-                                            <path d="M6.66675 16.0002L13.3334 22.6668L26.6667 9.3335" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_6831_848">
-                                            <rect width="32" height="32" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>Рекомендации по взаимодействию</div>
-                                </div>
-                            </div>
-                            <button class="button-text button-body">Узнать больше 
-                                <span class="btn-circle">
-                                    <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <g clip-path="url(#clip0_6900_492)">
-                                        <path d="M6 4L10 8L6 12" stroke="#0982C6" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_6900_492">
-                                        <rect width="16" height="16" fill="white"/>
-                                        </clipPath>
-                                        </defs>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-         </section>
-        <!-- специалистs -->
-        <section class="main-specialists">
-            <div class="container">
-                <div class="reviews-content">
-                    <div class="reviews-content_top">
-                        <div class="swiper-btns">
-                            <button>
-                                <svg class="arrow-left" id="speci-prev" xmlns="http://www.w3.org/2000/svg" width="60" height="52" viewBox="0 0 60 52" fill="none">
-                                    <g clip-path="url(#clip0_6818_2439)">
-                                    <path d="M12.5 26H47.5" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12.5 26L27.5 39" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12.5 26L27.5 13" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_6818_2439">
-                                    <rect width="60" height="52" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                            </button>
-                            <button>
-                                    <svg class="arrow-right" id="speci-next" xmlns="http://www.w3.org/2000/svg" width="60" height="52" viewBox="0 0 60 52" fill="none">
-                                        <g clip-path="url(#clip0_6818_2440)">
-                                        <path d="M12.5 26H47.5" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M32.5 39L47.5 26" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M32.5 13L47.5 26" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_6818_2440">
-                                        <rect width="60" height="52" fill="white"/>
-                                        </clipPath>
-                                        </defs>
-                                    </svg>
-                            </button>
-                                
-                        </div>
-                        <div class="h1">профессионалы своего дела</div>
-                    </div>
-                    <div class="swiper specialists">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="specialists-slide_block">
-                                    <div class="specialists-fon dart-blue">
-                                        <div class="specialists-fon_block">
-                                            <div class="text-m-20 text-upp">Дмитрий Демченко</div>
-                                            <svg class="spec-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                                <g clip-path="url(#clip0_6923_401)">
-                                                <path d="M4 16C4 17.5759 4.31039 19.1363 4.91345 20.5922C5.5165 22.0481 6.40042 23.371 7.51472 24.4853C8.62902 25.5996 9.95189 26.4835 11.4078 27.0866C12.8637 27.6896 14.4241 28 16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26428 19.1826 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76516 4 12.8174 4 16Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M16 12H16.0133" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M14.6667 16H16.0001V21.3333H17.3334" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_6923_401">
-                                                <rect width="32" height="32" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div class="text-m-16 text-upp">Врач нарколог</div>
-                                    </div>
-                                    <img class="specialists-image" src="assest/main/spec.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="specialists-slide_block">
-                                    <div class="specialists-fon grey">
-                                        <div class="specialists-fon_block">
-                                            <div class="text-m-20 text-upp">Дмитрий Демченко</div>
-                                            <svg class="spec-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                                <g clip-path="url(#clip0_6923_401)">
-                                                <path d="M4 16C4 17.5759 4.31039 19.1363 4.91345 20.5922C5.5165 22.0481 6.40042 23.371 7.51472 24.4853C8.62902 25.5996 9.95189 26.4835 11.4078 27.0866C12.8637 27.6896 14.4241 28 16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26428 19.1826 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76516 4 12.8174 4 16Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M16 12H16.0133" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M14.6667 16H16.0001V21.3333H17.3334" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_6923_401">
-                                                <rect width="32" height="32" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div class="text-m-16 text-upp">Врач нарколог</div>
-                                    </div>
-                                    <img class="specialists-image" src="assest/main/spec.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="specialists-slide_block">
-                                    <div class="specialists-fon blue">
-                                        <div class="specialists-fon_block">
-                                            <div class="text-m-20 text-upp">Дмитрий Демченко</div>
-                                            <svg class="spec-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                                <g clip-path="url(#clip0_6923_401)">
-                                                <path d="M4 16C4 17.5759 4.31039 19.1363 4.91345 20.5922C5.5165 22.0481 6.40042 23.371 7.51472 24.4853C8.62902 25.5996 9.95189 26.4835 11.4078 27.0866C12.8637 27.6896 14.4241 28 16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26428 19.1826 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76516 4 12.8174 4 16Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M16 12H16.0133" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M14.6667 16H16.0001V21.3333H17.3334" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_6923_401">
-                                                <rect width="32" height="32" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div class="text-m-16 text-upp">Врач нарколог</div>
-                                    </div>
-                                    <img class="specialists-image" src="assest/main/spec.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="specialists-slide_block">
-                                    <div class="specialists-fon dart-blue">
-                                        <div class="specialists-fon_block">
-                                            <div class="text-m-20 text-upp">Дмитрий Демченко</div>
-                                            <svg class="spec-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                                <g clip-path="url(#clip0_6923_401)">
-                                                <path d="M4 16C4 17.5759 4.31039 19.1363 4.91345 20.5922C5.5165 22.0481 6.40042 23.371 7.51472 24.4853C8.62902 25.5996 9.95189 26.4835 11.4078 27.0866C12.8637 27.6896 14.4241 28 16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26428 19.1826 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76516 4 12.8174 4 16Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M16 12H16.0133" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M14.6667 16H16.0001V21.3333H17.3334" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_6923_401">
-                                                <rect width="32" height="32" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div class="text-m-16 text-upp">Врач нарколог</div>
-                                    </div>
-                                    <img class="specialists-image" src="assest/main/spec.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="specialists-slide_block">
-                                    <div class="specialists-fon grey">
-                                        <div class="specialists-fon_block">
-                                            <div class="text-m-20 text-upp">Дмитрий Демченко</div>
-                                            <svg class="spec-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                                <g clip-path="url(#clip0_6923_401)">
-                                                <path d="M4 16C4 17.5759 4.31039 19.1363 4.91345 20.5922C5.5165 22.0481 6.40042 23.371 7.51472 24.4853C8.62902 25.5996 9.95189 26.4835 11.4078 27.0866C12.8637 27.6896 14.4241 28 16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26428 19.1826 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76516 4 12.8174 4 16Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M16 12H16.0133" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M14.6667 16H16.0001V21.3333H17.3334" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_6923_401">
-                                                <rect width="32" height="32" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div class="text-m-16 text-upp">Врач нарколог</div>
-                                    </div>
-                                    <img class="specialists-image" src="assest/main/spec.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="specialists-slide_block">
-                                    <div class="specialists-fon blue">
-                                        <div class="specialists-fon_block">
-                                            <div class="text-m-20 text-upp">Дмитрий Демченко</div>
-                                            <svg class="spec-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                                <g clip-path="url(#clip0_6923_401)">
-                                                <path d="M4 16C4 17.5759 4.31039 19.1363 4.91345 20.5922C5.5165 22.0481 6.40042 23.371 7.51472 24.4853C8.62902 25.5996 9.95189 26.4835 11.4078 27.0866C12.8637 27.6896 14.4241 28 16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26428 19.1826 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76516 4 12.8174 4 16Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M16 12H16.0133" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M14.6667 16H16.0001V21.3333H17.3334" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_6923_401">
-                                                <rect width="32" height="32" fill="white"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div class="text-m-16 text-upp">Врач нарколог</div>
-                                    </div>
-                                    <img class="specialists-image" src="assest/main/spec.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- отзывы -->
-         <section>
-            <div class="container">
-                <div class="reviews-content">
-                    <div class="reviews-content_top">
-                        <div class="h1">Реальные истории, реальные победы</div>
-                        <div class="swiper-btns">
-                            <button>
-                                <svg class="arrow-left" id="prevEl" xmlns="http://www.w3.org/2000/svg" width="60" height="52" viewBox="0 0 60 52" fill="none">
-                                    <g clip-path="url(#clip0_6818_2439)">
-                                    <path d="M12.5 26H47.5" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12.5 26L27.5 39" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12.5 26L27.5 13" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_6818_2439">
-                                    <rect width="60" height="52" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                            </button>
-                                <button>
-                                    <svg class="arrow-right" id="nextEl" xmlns="http://www.w3.org/2000/svg" width="60" height="52" viewBox="0 0 60 52" fill="none">
-                                        <g clip-path="url(#clip0_6818_2440)">
-                                        <path d="M12.5 26H47.5" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M32.5 39L47.5 26" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M32.5 13L47.5 26" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_6818_2440">
-                                        <rect width="60" height="52" fill="white"/>
-                                        </clipPath>
-                                        </defs>
-                                    </svg>
-                                </button>
-                                
-                        </div>
-                    </div>
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="reviews-slide_block">
-                                        <div class="reviews-slide_top">
-                                            <div class="text-m">Сергей</div>
-                                            <div class="text-s-16 grey-light">употреблял 7 лет, алкоголь</div>
-                                        </div>
-                                        <div class="reviews-slide_description">
-                                            <img class="rew-image" src="assest/main/rew1.png" alt="">
-                                        </div>
-                                        <div class="reviews-slide_bottom">
-                                            <svg class="reviews-stars" xmlns="http://www.w3.org/2000/svg" width="168" height="24" viewBox="0 0 168 24" fill="none">
-                                                <g clip-path="url(#clip0_6818_2344)">
-                                                <path d="M8.31475 7.83475L8.57498 7.79702L8.69137 7.56123L11.5444 1.78123L11.5445 1.78094C11.5858 1.69721 11.6497 1.6267 11.7289 1.57739C11.8082 1.52808 11.8997 1.50195 11.993 1.50195C12.0864 1.50195 12.1778 1.52808 12.2571 1.57739C12.3364 1.6267 12.4002 1.69721 12.4415 1.78094L12.4416 1.78117L15.2936 7.56117L15.41 7.79697L15.6702 7.83474L22.0502 8.76074L22.0503 8.76076C22.1378 8.77343 22.2204 8.80906 22.2896 8.86402C22.3588 8.91898 22.4122 8.9913 22.4444 9.07363C22.4766 9.15595 22.4863 9.24533 22.4727 9.33265C22.4597 9.41586 22.426 9.49436 22.3746 9.56093L22.3182 9.62245L17.7043 14.1126L17.5157 14.2961L17.5602 14.5555L18.6512 20.9105L18.6512 20.9107C18.6663 20.9981 18.6578 21.088 18.6267 21.171C18.5955 21.2541 18.5429 21.3274 18.474 21.3833C18.4052 21.4393 18.3228 21.476 18.2351 21.4896C18.1513 21.5026 18.0656 21.494 17.9861 21.4648L17.9132 21.4313L12.2321 18.4376L11.9993 18.3149L11.7663 18.4374L6.06033 21.4374L6.06013 21.4375C5.98172 21.4787 5.89374 21.4984 5.80521 21.4945C5.71668 21.4906 5.63078 21.4632 5.5563 21.4152C5.48183 21.3672 5.42145 21.3002 5.38136 21.2212C5.3431 21.1458 5.32462 21.062 5.32757 20.9776L5.33702 20.8976L6.42481 14.5554L6.46929 14.2961L6.28076 14.1126L1.65876 9.61363L1.6583 9.61318C1.59481 9.55154 1.54881 9.47415 1.52501 9.38892C1.50121 9.30369 1.50046 9.21367 1.52283 9.12805C1.5452 9.04243 1.5899 8.96428 1.65235 8.90159C1.71194 8.84176 1.78566 8.79805 1.86659 8.77445L1.94881 8.75771L8.31475 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip1_6818_2344)">
-                                                <path d="M44.3148 7.83475L44.575 7.79702L44.6914 7.56123L47.5444 1.78123L47.5445 1.78094C47.5858 1.69721 47.6497 1.6267 47.7289 1.57739C47.8082 1.52808 47.8997 1.50195 47.993 1.50195C48.0864 1.50195 48.1778 1.52808 48.2571 1.57739C48.3364 1.6267 48.4002 1.69721 48.4415 1.78094L48.4416 1.78117L51.2936 7.56117L51.41 7.79697L51.6702 7.83474L58.0502 8.76074L58.0503 8.76076C58.1378 8.77343 58.2204 8.80906 58.2896 8.86402C58.3588 8.91898 58.4122 8.9913 58.4444 9.07363C58.4766 9.15595 58.4863 9.24533 58.4727 9.33265C58.4597 9.41586 58.426 9.49436 58.3746 9.56093L58.3182 9.62245L53.7043 14.1126L53.5157 14.2961L53.5602 14.5555L54.6512 20.9105L54.6512 20.9107C54.6663 20.9981 54.6578 21.088 54.6267 21.171C54.5955 21.2541 54.5429 21.3274 54.474 21.3833C54.4052 21.4393 54.3228 21.476 54.2351 21.4896C54.1513 21.5026 54.0656 21.494 53.9861 21.4648L53.9132 21.4313L48.2321 18.4376L47.9993 18.3149L47.7663 18.4374L42.0603 21.4374L42.0601 21.4375C41.9817 21.4787 41.8937 21.4984 41.8052 21.4945C41.7167 21.4906 41.6308 21.4632 41.5563 21.4152C41.4818 21.3672 41.4215 21.3002 41.3814 21.2212C41.3431 21.1458 41.3246 21.062 41.3276 20.9776L41.337 20.8976L42.4248 14.5554L42.4693 14.2961L42.2808 14.1126L37.6588 9.61363L37.6583 9.61318C37.5948 9.55154 37.5488 9.47415 37.525 9.38892C37.5012 9.30369 37.5005 9.21367 37.5228 9.12805C37.5452 9.04243 37.5899 8.96428 37.6523 8.90159C37.7119 8.84176 37.7857 8.79805 37.8666 8.77445L37.9488 8.75771L44.3148 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip2_6818_2344)">
-                                                <path d="M80.3148 7.83475L80.575 7.79702L80.6914 7.56123L83.5444 1.78123L83.5445 1.78094C83.5858 1.69721 83.6497 1.6267 83.7289 1.57739C83.8082 1.52808 83.8997 1.50195 83.993 1.50195C84.0864 1.50195 84.1778 1.52808 84.2571 1.57739C84.3364 1.6267 84.4002 1.69721 84.4415 1.78094L84.4416 1.78117L87.2936 7.56117L87.41 7.79697L87.6702 7.83474L94.0502 8.76074L94.0503 8.76076C94.1378 8.77343 94.2204 8.80906 94.2896 8.86402C94.3588 8.91898 94.4122 8.9913 94.4444 9.07363C94.4766 9.15595 94.4863 9.24533 94.4727 9.33265C94.4597 9.41586 94.426 9.49436 94.3746 9.56093L94.3182 9.62245L89.7043 14.1126L89.5157 14.2961L89.5602 14.5555L90.6512 20.9105L90.6512 20.9107C90.6663 20.9981 90.6578 21.088 90.6267 21.171C90.5955 21.2541 90.5429 21.3274 90.474 21.3833C90.4052 21.4393 90.3228 21.476 90.2351 21.4896C90.1513 21.5026 90.0656 21.494 89.9861 21.4648L89.9132 21.4313L84.2321 18.4376L83.9993 18.3149L83.7663 18.4374L78.0603 21.4374L78.0601 21.4375C77.9817 21.4787 77.8937 21.4984 77.8052 21.4945C77.7167 21.4906 77.6308 21.4632 77.5563 21.4152C77.4818 21.3672 77.4215 21.3002 77.3814 21.2212C77.3431 21.1458 77.3246 21.062 77.3276 20.9776L77.337 20.8976L78.4248 14.5554L78.4693 14.2961L78.2808 14.1126L73.6588 9.61363L73.6583 9.61318C73.5948 9.55154 73.5488 9.47415 73.525 9.38892C73.5012 9.30369 73.5005 9.21367 73.5228 9.12805C73.5452 9.04243 73.5899 8.96428 73.6523 8.90159C73.7119 8.84176 73.7857 8.79805 73.8666 8.77445L73.9488 8.75771L80.3148 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip3_6818_2344)">
-                                                <path d="M116.315 7.83475L116.575 7.79702L116.691 7.56123L119.544 1.78123L119.545 1.78094C119.586 1.69721 119.65 1.6267 119.729 1.57739C119.808 1.52808 119.9 1.50195 119.993 1.50195C120.086 1.50195 120.178 1.52808 120.257 1.57739C120.336 1.6267 120.4 1.69721 120.442 1.78094L120.442 1.78117L123.294 7.56117L123.41 7.79697L123.67 7.83474L130.05 8.76074L130.05 8.76076C130.138 8.77343 130.22 8.80906 130.29 8.86402C130.359 8.91898 130.412 8.9913 130.444 9.07363C130.477 9.15595 130.486 9.24533 130.473 9.33265C130.46 9.41586 130.426 9.49436 130.375 9.56093L130.318 9.62245L125.704 14.1126L125.516 14.2961L125.56 14.5555L126.651 20.9105L126.651 20.9107C126.666 20.9981 126.658 21.088 126.627 21.171C126.596 21.2541 126.543 21.3274 126.474 21.3833C126.405 21.4393 126.323 21.476 126.235 21.4896C126.151 21.5026 126.066 21.494 125.986 21.4648L125.913 21.4313L120.232 18.4376L119.999 18.3149L119.766 18.4374L114.06 21.4374L114.06 21.4375C113.982 21.4787 113.894 21.4984 113.805 21.4945C113.717 21.4906 113.631 21.4632 113.556 21.4152C113.482 21.3672 113.421 21.3002 113.381 21.2212C113.343 21.1458 113.325 21.062 113.328 20.9776L113.337 20.8976L114.425 14.5554L114.469 14.2961L114.281 14.1126L109.659 9.61363L109.658 9.61318C109.595 9.55154 109.549 9.47415 109.525 9.38892C109.501 9.30369 109.5 9.21367 109.523 9.12805C109.545 9.04243 109.59 8.96428 109.652 8.90159C109.712 8.84176 109.786 8.79805 109.867 8.77445L109.949 8.75771L116.315 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip4_6818_2344)">
-                                                <path d="M156 17.75L149.828 20.995L151.007 14.122L146.007 9.25495L152.907 8.25495L155.993 2.00195L159.079 8.25495L165.979 9.25495L160.979 14.122L162.158 20.995L156 17.75Z" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_6818_2344">
-                                                <rect width="24" height="24" fill="white"/>
-                                                </clipPath>
-                                                <clipPath id="clip1_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(36)"/>
-                                                </clipPath>
-                                                <clipPath id="clip2_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(72)"/>
-                                                </clipPath>
-                                                <clipPath id="clip3_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(108)"/>
-                                                </clipPath>
-                                                <clipPath id="clip4_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(144)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <div class="text-m-14 grey-light">20.07.2022</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="reviews-slide_block">
-                                        <div class="reviews-slide_top">
-                                            <div class="text-m">Сергей</div>
-                                            <div class="text-s-16 grey-light">употреблял 7 лет, алкоголь</div>
-                                        </div>
-                                        <div class="reviews-slide_description">
-                                            <div class="review">
-                                                <p class="short-text text-s-16">
-                                                    Долго не верил, что мне кто-то сможет помочь, но в этой клинике всё иначе. Здесь не только профессиональные врачи, но и человеческое отношение. Очень благодарен за индивидуальный подход и постоянную поддержку. За три недели я почувствовал огромные изменения. Огромное спасибо всей команде...
-                                                    <span class="read-more text-s-16"> читать полностью</span>
-                                                </p>
-                                                <p class="full-text text-s-16">
-                                                    Долго не верил, что мне кто-то сможет помочь, но в этой клинике всё иначе. Здесь не только профессиональные врачи, но и человеческое отношение. Очень благодарен за индивидуальный подход и постоянную поддержку. За три недели я почувствовал огромные изменения. Огромное спасибо всей команде!
-                                                </p>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="reviews-slide_bottom">
-                                            <svg class="reviews-stars" xmlns="http://www.w3.org/2000/svg" width="168" height="24" viewBox="0 0 168 24" fill="none">
-                                                <g clip-path="url(#clip0_6818_2344)">
-                                                <path d="M8.31475 7.83475L8.57498 7.79702L8.69137 7.56123L11.5444 1.78123L11.5445 1.78094C11.5858 1.69721 11.6497 1.6267 11.7289 1.57739C11.8082 1.52808 11.8997 1.50195 11.993 1.50195C12.0864 1.50195 12.1778 1.52808 12.2571 1.57739C12.3364 1.6267 12.4002 1.69721 12.4415 1.78094L12.4416 1.78117L15.2936 7.56117L15.41 7.79697L15.6702 7.83474L22.0502 8.76074L22.0503 8.76076C22.1378 8.77343 22.2204 8.80906 22.2896 8.86402C22.3588 8.91898 22.4122 8.9913 22.4444 9.07363C22.4766 9.15595 22.4863 9.24533 22.4727 9.33265C22.4597 9.41586 22.426 9.49436 22.3746 9.56093L22.3182 9.62245L17.7043 14.1126L17.5157 14.2961L17.5602 14.5555L18.6512 20.9105L18.6512 20.9107C18.6663 20.9981 18.6578 21.088 18.6267 21.171C18.5955 21.2541 18.5429 21.3274 18.474 21.3833C18.4052 21.4393 18.3228 21.476 18.2351 21.4896C18.1513 21.5026 18.0656 21.494 17.9861 21.4648L17.9132 21.4313L12.2321 18.4376L11.9993 18.3149L11.7663 18.4374L6.06033 21.4374L6.06013 21.4375C5.98172 21.4787 5.89374 21.4984 5.80521 21.4945C5.71668 21.4906 5.63078 21.4632 5.5563 21.4152C5.48183 21.3672 5.42145 21.3002 5.38136 21.2212C5.3431 21.1458 5.32462 21.062 5.32757 20.9776L5.33702 20.8976L6.42481 14.5554L6.46929 14.2961L6.28076 14.1126L1.65876 9.61363L1.6583 9.61318C1.59481 9.55154 1.54881 9.47415 1.52501 9.38892C1.50121 9.30369 1.50046 9.21367 1.52283 9.12805C1.5452 9.04243 1.5899 8.96428 1.65235 8.90159C1.71194 8.84176 1.78566 8.79805 1.86659 8.77445L1.94881 8.75771L8.31475 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip1_6818_2344)">
-                                                <path d="M44.3148 7.83475L44.575 7.79702L44.6914 7.56123L47.5444 1.78123L47.5445 1.78094C47.5858 1.69721 47.6497 1.6267 47.7289 1.57739C47.8082 1.52808 47.8997 1.50195 47.993 1.50195C48.0864 1.50195 48.1778 1.52808 48.2571 1.57739C48.3364 1.6267 48.4002 1.69721 48.4415 1.78094L48.4416 1.78117L51.2936 7.56117L51.41 7.79697L51.6702 7.83474L58.0502 8.76074L58.0503 8.76076C58.1378 8.77343 58.2204 8.80906 58.2896 8.86402C58.3588 8.91898 58.4122 8.9913 58.4444 9.07363C58.4766 9.15595 58.4863 9.24533 58.4727 9.33265C58.4597 9.41586 58.426 9.49436 58.3746 9.56093L58.3182 9.62245L53.7043 14.1126L53.5157 14.2961L53.5602 14.5555L54.6512 20.9105L54.6512 20.9107C54.6663 20.9981 54.6578 21.088 54.6267 21.171C54.5955 21.2541 54.5429 21.3274 54.474 21.3833C54.4052 21.4393 54.3228 21.476 54.2351 21.4896C54.1513 21.5026 54.0656 21.494 53.9861 21.4648L53.9132 21.4313L48.2321 18.4376L47.9993 18.3149L47.7663 18.4374L42.0603 21.4374L42.0601 21.4375C41.9817 21.4787 41.8937 21.4984 41.8052 21.4945C41.7167 21.4906 41.6308 21.4632 41.5563 21.4152C41.4818 21.3672 41.4215 21.3002 41.3814 21.2212C41.3431 21.1458 41.3246 21.062 41.3276 20.9776L41.337 20.8976L42.4248 14.5554L42.4693 14.2961L42.2808 14.1126L37.6588 9.61363L37.6583 9.61318C37.5948 9.55154 37.5488 9.47415 37.525 9.38892C37.5012 9.30369 37.5005 9.21367 37.5228 9.12805C37.5452 9.04243 37.5899 8.96428 37.6523 8.90159C37.7119 8.84176 37.7857 8.79805 37.8666 8.77445L37.9488 8.75771L44.3148 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip2_6818_2344)">
-                                                <path d="M80.3148 7.83475L80.575 7.79702L80.6914 7.56123L83.5444 1.78123L83.5445 1.78094C83.5858 1.69721 83.6497 1.6267 83.7289 1.57739C83.8082 1.52808 83.8997 1.50195 83.993 1.50195C84.0864 1.50195 84.1778 1.52808 84.2571 1.57739C84.3364 1.6267 84.4002 1.69721 84.4415 1.78094L84.4416 1.78117L87.2936 7.56117L87.41 7.79697L87.6702 7.83474L94.0502 8.76074L94.0503 8.76076C94.1378 8.77343 94.2204 8.80906 94.2896 8.86402C94.3588 8.91898 94.4122 8.9913 94.4444 9.07363C94.4766 9.15595 94.4863 9.24533 94.4727 9.33265C94.4597 9.41586 94.426 9.49436 94.3746 9.56093L94.3182 9.62245L89.7043 14.1126L89.5157 14.2961L89.5602 14.5555L90.6512 20.9105L90.6512 20.9107C90.6663 20.9981 90.6578 21.088 90.6267 21.171C90.5955 21.2541 90.5429 21.3274 90.474 21.3833C90.4052 21.4393 90.3228 21.476 90.2351 21.4896C90.1513 21.5026 90.0656 21.494 89.9861 21.4648L89.9132 21.4313L84.2321 18.4376L83.9993 18.3149L83.7663 18.4374L78.0603 21.4374L78.0601 21.4375C77.9817 21.4787 77.8937 21.4984 77.8052 21.4945C77.7167 21.4906 77.6308 21.4632 77.5563 21.4152C77.4818 21.3672 77.4215 21.3002 77.3814 21.2212C77.3431 21.1458 77.3246 21.062 77.3276 20.9776L77.337 20.8976L78.4248 14.5554L78.4693 14.2961L78.2808 14.1126L73.6588 9.61363L73.6583 9.61318C73.5948 9.55154 73.5488 9.47415 73.525 9.38892C73.5012 9.30369 73.5005 9.21367 73.5228 9.12805C73.5452 9.04243 73.5899 8.96428 73.6523 8.90159C73.7119 8.84176 73.7857 8.79805 73.8666 8.77445L73.9488 8.75771L80.3148 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip3_6818_2344)">
-                                                <path d="M116.315 7.83475L116.575 7.79702L116.691 7.56123L119.544 1.78123L119.545 1.78094C119.586 1.69721 119.65 1.6267 119.729 1.57739C119.808 1.52808 119.9 1.50195 119.993 1.50195C120.086 1.50195 120.178 1.52808 120.257 1.57739C120.336 1.6267 120.4 1.69721 120.442 1.78094L120.442 1.78117L123.294 7.56117L123.41 7.79697L123.67 7.83474L130.05 8.76074L130.05 8.76076C130.138 8.77343 130.22 8.80906 130.29 8.86402C130.359 8.91898 130.412 8.9913 130.444 9.07363C130.477 9.15595 130.486 9.24533 130.473 9.33265C130.46 9.41586 130.426 9.49436 130.375 9.56093L130.318 9.62245L125.704 14.1126L125.516 14.2961L125.56 14.5555L126.651 20.9105L126.651 20.9107C126.666 20.9981 126.658 21.088 126.627 21.171C126.596 21.2541 126.543 21.3274 126.474 21.3833C126.405 21.4393 126.323 21.476 126.235 21.4896C126.151 21.5026 126.066 21.494 125.986 21.4648L125.913 21.4313L120.232 18.4376L119.999 18.3149L119.766 18.4374L114.06 21.4374L114.06 21.4375C113.982 21.4787 113.894 21.4984 113.805 21.4945C113.717 21.4906 113.631 21.4632 113.556 21.4152C113.482 21.3672 113.421 21.3002 113.381 21.2212C113.343 21.1458 113.325 21.062 113.328 20.9776L113.337 20.8976L114.425 14.5554L114.469 14.2961L114.281 14.1126L109.659 9.61363L109.658 9.61318C109.595 9.55154 109.549 9.47415 109.525 9.38892C109.501 9.30369 109.5 9.21367 109.523 9.12805C109.545 9.04243 109.59 8.96428 109.652 8.90159C109.712 8.84176 109.786 8.79805 109.867 8.77445L109.949 8.75771L116.315 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip4_6818_2344)">
-                                                <path d="M156 17.75L149.828 20.995L151.007 14.122L146.007 9.25495L152.907 8.25495L155.993 2.00195L159.079 8.25495L165.979 9.25495L160.979 14.122L162.158 20.995L156 17.75Z" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_6818_2344">
-                                                <rect width="24" height="24" fill="white"/>
-                                                </clipPath>
-                                                <clipPath id="clip1_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(36)"/>
-                                                </clipPath>
-                                                <clipPath id="clip2_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(72)"/>
-                                                </clipPath>
-                                                <clipPath id="clip3_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(108)"/>
-                                                </clipPath>
-                                                <clipPath id="clip4_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(144)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <div class="text-m-14 grey-light">20.07.2022</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="reviews-slide_block">
-                                        <div class="reviews-slide_top">
-                                            <div class="text-m">Сергей</div>
-                                            <div class="text-s-16 grey-light">употреблял 7 лет, алкоголь</div>
-                                        </div>
-                                        <div class="reviews-slide_description">
-                                            <video src="" controls="controls"></video>
-                                        </div>
-                                        <div class="reviews-slide_bottom">
-                                            <svg class="reviews-stars" xmlns="http://www.w3.org/2000/svg" width="168" height="24" viewBox="0 0 168 24" fill="none">
-                                                <g clip-path="url(#clip0_6818_2344)">
-                                                <path d="M8.31475 7.83475L8.57498 7.79702L8.69137 7.56123L11.5444 1.78123L11.5445 1.78094C11.5858 1.69721 11.6497 1.6267 11.7289 1.57739C11.8082 1.52808 11.8997 1.50195 11.993 1.50195C12.0864 1.50195 12.1778 1.52808 12.2571 1.57739C12.3364 1.6267 12.4002 1.69721 12.4415 1.78094L12.4416 1.78117L15.2936 7.56117L15.41 7.79697L15.6702 7.83474L22.0502 8.76074L22.0503 8.76076C22.1378 8.77343 22.2204 8.80906 22.2896 8.86402C22.3588 8.91898 22.4122 8.9913 22.4444 9.07363C22.4766 9.15595 22.4863 9.24533 22.4727 9.33265C22.4597 9.41586 22.426 9.49436 22.3746 9.56093L22.3182 9.62245L17.7043 14.1126L17.5157 14.2961L17.5602 14.5555L18.6512 20.9105L18.6512 20.9107C18.6663 20.9981 18.6578 21.088 18.6267 21.171C18.5955 21.2541 18.5429 21.3274 18.474 21.3833C18.4052 21.4393 18.3228 21.476 18.2351 21.4896C18.1513 21.5026 18.0656 21.494 17.9861 21.4648L17.9132 21.4313L12.2321 18.4376L11.9993 18.3149L11.7663 18.4374L6.06033 21.4374L6.06013 21.4375C5.98172 21.4787 5.89374 21.4984 5.80521 21.4945C5.71668 21.4906 5.63078 21.4632 5.5563 21.4152C5.48183 21.3672 5.42145 21.3002 5.38136 21.2212C5.3431 21.1458 5.32462 21.062 5.32757 20.9776L5.33702 20.8976L6.42481 14.5554L6.46929 14.2961L6.28076 14.1126L1.65876 9.61363L1.6583 9.61318C1.59481 9.55154 1.54881 9.47415 1.52501 9.38892C1.50121 9.30369 1.50046 9.21367 1.52283 9.12805C1.5452 9.04243 1.5899 8.96428 1.65235 8.90159C1.71194 8.84176 1.78566 8.79805 1.86659 8.77445L1.94881 8.75771L8.31475 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip1_6818_2344)">
-                                                <path d="M44.3148 7.83475L44.575 7.79702L44.6914 7.56123L47.5444 1.78123L47.5445 1.78094C47.5858 1.69721 47.6497 1.6267 47.7289 1.57739C47.8082 1.52808 47.8997 1.50195 47.993 1.50195C48.0864 1.50195 48.1778 1.52808 48.2571 1.57739C48.3364 1.6267 48.4002 1.69721 48.4415 1.78094L48.4416 1.78117L51.2936 7.56117L51.41 7.79697L51.6702 7.83474L58.0502 8.76074L58.0503 8.76076C58.1378 8.77343 58.2204 8.80906 58.2896 8.86402C58.3588 8.91898 58.4122 8.9913 58.4444 9.07363C58.4766 9.15595 58.4863 9.24533 58.4727 9.33265C58.4597 9.41586 58.426 9.49436 58.3746 9.56093L58.3182 9.62245L53.7043 14.1126L53.5157 14.2961L53.5602 14.5555L54.6512 20.9105L54.6512 20.9107C54.6663 20.9981 54.6578 21.088 54.6267 21.171C54.5955 21.2541 54.5429 21.3274 54.474 21.3833C54.4052 21.4393 54.3228 21.476 54.2351 21.4896C54.1513 21.5026 54.0656 21.494 53.9861 21.4648L53.9132 21.4313L48.2321 18.4376L47.9993 18.3149L47.7663 18.4374L42.0603 21.4374L42.0601 21.4375C41.9817 21.4787 41.8937 21.4984 41.8052 21.4945C41.7167 21.4906 41.6308 21.4632 41.5563 21.4152C41.4818 21.3672 41.4215 21.3002 41.3814 21.2212C41.3431 21.1458 41.3246 21.062 41.3276 20.9776L41.337 20.8976L42.4248 14.5554L42.4693 14.2961L42.2808 14.1126L37.6588 9.61363L37.6583 9.61318C37.5948 9.55154 37.5488 9.47415 37.525 9.38892C37.5012 9.30369 37.5005 9.21367 37.5228 9.12805C37.5452 9.04243 37.5899 8.96428 37.6523 8.90159C37.7119 8.84176 37.7857 8.79805 37.8666 8.77445L37.9488 8.75771L44.3148 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip2_6818_2344)">
-                                                <path d="M80.3148 7.83475L80.575 7.79702L80.6914 7.56123L83.5444 1.78123L83.5445 1.78094C83.5858 1.69721 83.6497 1.6267 83.7289 1.57739C83.8082 1.52808 83.8997 1.50195 83.993 1.50195C84.0864 1.50195 84.1778 1.52808 84.2571 1.57739C84.3364 1.6267 84.4002 1.69721 84.4415 1.78094L84.4416 1.78117L87.2936 7.56117L87.41 7.79697L87.6702 7.83474L94.0502 8.76074L94.0503 8.76076C94.1378 8.77343 94.2204 8.80906 94.2896 8.86402C94.3588 8.91898 94.4122 8.9913 94.4444 9.07363C94.4766 9.15595 94.4863 9.24533 94.4727 9.33265C94.4597 9.41586 94.426 9.49436 94.3746 9.56093L94.3182 9.62245L89.7043 14.1126L89.5157 14.2961L89.5602 14.5555L90.6512 20.9105L90.6512 20.9107C90.6663 20.9981 90.6578 21.088 90.6267 21.171C90.5955 21.2541 90.5429 21.3274 90.474 21.3833C90.4052 21.4393 90.3228 21.476 90.2351 21.4896C90.1513 21.5026 90.0656 21.494 89.9861 21.4648L89.9132 21.4313L84.2321 18.4376L83.9993 18.3149L83.7663 18.4374L78.0603 21.4374L78.0601 21.4375C77.9817 21.4787 77.8937 21.4984 77.8052 21.4945C77.7167 21.4906 77.6308 21.4632 77.5563 21.4152C77.4818 21.3672 77.4215 21.3002 77.3814 21.2212C77.3431 21.1458 77.3246 21.062 77.3276 20.9776L77.337 20.8976L78.4248 14.5554L78.4693 14.2961L78.2808 14.1126L73.6588 9.61363L73.6583 9.61318C73.5948 9.55154 73.5488 9.47415 73.525 9.38892C73.5012 9.30369 73.5005 9.21367 73.5228 9.12805C73.5452 9.04243 73.5899 8.96428 73.6523 8.90159C73.7119 8.84176 73.7857 8.79805 73.8666 8.77445L73.9488 8.75771L80.3148 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip3_6818_2344)">
-                                                <path d="M116.315 7.83475L116.575 7.79702L116.691 7.56123L119.544 1.78123L119.545 1.78094C119.586 1.69721 119.65 1.6267 119.729 1.57739C119.808 1.52808 119.9 1.50195 119.993 1.50195C120.086 1.50195 120.178 1.52808 120.257 1.57739C120.336 1.6267 120.4 1.69721 120.442 1.78094L120.442 1.78117L123.294 7.56117L123.41 7.79697L123.67 7.83474L130.05 8.76074L130.05 8.76076C130.138 8.77343 130.22 8.80906 130.29 8.86402C130.359 8.91898 130.412 8.9913 130.444 9.07363C130.477 9.15595 130.486 9.24533 130.473 9.33265C130.46 9.41586 130.426 9.49436 130.375 9.56093L130.318 9.62245L125.704 14.1126L125.516 14.2961L125.56 14.5555L126.651 20.9105L126.651 20.9107C126.666 20.9981 126.658 21.088 126.627 21.171C126.596 21.2541 126.543 21.3274 126.474 21.3833C126.405 21.4393 126.323 21.476 126.235 21.4896C126.151 21.5026 126.066 21.494 125.986 21.4648L125.913 21.4313L120.232 18.4376L119.999 18.3149L119.766 18.4374L114.06 21.4374L114.06 21.4375C113.982 21.4787 113.894 21.4984 113.805 21.4945C113.717 21.4906 113.631 21.4632 113.556 21.4152C113.482 21.3672 113.421 21.3002 113.381 21.2212C113.343 21.1458 113.325 21.062 113.328 20.9776L113.337 20.8976L114.425 14.5554L114.469 14.2961L114.281 14.1126L109.659 9.61363L109.658 9.61318C109.595 9.55154 109.549 9.47415 109.525 9.38892C109.501 9.30369 109.5 9.21367 109.523 9.12805C109.545 9.04243 109.59 8.96428 109.652 8.90159C109.712 8.84176 109.786 8.79805 109.867 8.77445L109.949 8.75771L116.315 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip4_6818_2344)">
-                                                <path d="M156 17.75L149.828 20.995L151.007 14.122L146.007 9.25495L152.907 8.25495L155.993 2.00195L159.079 8.25495L165.979 9.25495L160.979 14.122L162.158 20.995L156 17.75Z" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_6818_2344">
-                                                <rect width="24" height="24" fill="white"/>
-                                                </clipPath>
-                                                <clipPath id="clip1_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(36)"/>
-                                                </clipPath>
-                                                <clipPath id="clip2_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(72)"/>
-                                                </clipPath>
-                                                <clipPath id="clip3_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(108)"/>
-                                                </clipPath>
-                                                <clipPath id="clip4_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(144)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <div class="text-m-14 grey-light">20.07.2022</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="reviews-slide_block">
-                                        <div class="reviews-slide_top">
-                                            <div class="text-m">Сергей</div>
-                                            <div class="text-s-16 grey-light">употреблял 7 лет, алкоголь</div>
-                                        </div>
-                                        <div class="reviews-slide_description">
-                                            <div class="review">
-                                                <p class="short-text text-s-16">
-                                                    Долго не верил, что мне кто-то сможет помочь, но в этой клинике всё иначе. Здесь не только профессиональные врачи, но и человеческое отношение. Очень благодарен за индивидуальный подход и постоянную поддержку. За три недели я почувствовал огромные изменения. Огромное спасибо всей команде...
-                                                    <span class="read-more text-s-16"> читать полностью</span>
-                                                </p>
-                                                <p class="full-text text-s-16">
-                                                    Долго не верил, что мне кто-то сможет помочь, но в этой клинике всё иначе. Здесь не только профессиональные врачи, но и человеческое отношение. Очень благодарен за индивидуальный подход и постоянную поддержку. За три недели я почувствовал огромные изменения. Огромное спасибо всей команде!
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="reviews-slide_bottom">
-                                            <svg class="reviews-stars" xmlns="http://www.w3.org/2000/svg" width="168" height="24" viewBox="0 0 168 24" fill="none">
-                                                <g clip-path="url(#clip0_6818_2344)">
-                                                <path d="M8.31475 7.83475L8.57498 7.79702L8.69137 7.56123L11.5444 1.78123L11.5445 1.78094C11.5858 1.69721 11.6497 1.6267 11.7289 1.57739C11.8082 1.52808 11.8997 1.50195 11.993 1.50195C12.0864 1.50195 12.1778 1.52808 12.2571 1.57739C12.3364 1.6267 12.4002 1.69721 12.4415 1.78094L12.4416 1.78117L15.2936 7.56117L15.41 7.79697L15.6702 7.83474L22.0502 8.76074L22.0503 8.76076C22.1378 8.77343 22.2204 8.80906 22.2896 8.86402C22.3588 8.91898 22.4122 8.9913 22.4444 9.07363C22.4766 9.15595 22.4863 9.24533 22.4727 9.33265C22.4597 9.41586 22.426 9.49436 22.3746 9.56093L22.3182 9.62245L17.7043 14.1126L17.5157 14.2961L17.5602 14.5555L18.6512 20.9105L18.6512 20.9107C18.6663 20.9981 18.6578 21.088 18.6267 21.171C18.5955 21.2541 18.5429 21.3274 18.474 21.3833C18.4052 21.4393 18.3228 21.476 18.2351 21.4896C18.1513 21.5026 18.0656 21.494 17.9861 21.4648L17.9132 21.4313L12.2321 18.4376L11.9993 18.3149L11.7663 18.4374L6.06033 21.4374L6.06013 21.4375C5.98172 21.4787 5.89374 21.4984 5.80521 21.4945C5.71668 21.4906 5.63078 21.4632 5.5563 21.4152C5.48183 21.3672 5.42145 21.3002 5.38136 21.2212C5.3431 21.1458 5.32462 21.062 5.32757 20.9776L5.33702 20.8976L6.42481 14.5554L6.46929 14.2961L6.28076 14.1126L1.65876 9.61363L1.6583 9.61318C1.59481 9.55154 1.54881 9.47415 1.52501 9.38892C1.50121 9.30369 1.50046 9.21367 1.52283 9.12805C1.5452 9.04243 1.5899 8.96428 1.65235 8.90159C1.71194 8.84176 1.78566 8.79805 1.86659 8.77445L1.94881 8.75771L8.31475 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip1_6818_2344)">
-                                                <path d="M44.3148 7.83475L44.575 7.79702L44.6914 7.56123L47.5444 1.78123L47.5445 1.78094C47.5858 1.69721 47.6497 1.6267 47.7289 1.57739C47.8082 1.52808 47.8997 1.50195 47.993 1.50195C48.0864 1.50195 48.1778 1.52808 48.2571 1.57739C48.3364 1.6267 48.4002 1.69721 48.4415 1.78094L48.4416 1.78117L51.2936 7.56117L51.41 7.79697L51.6702 7.83474L58.0502 8.76074L58.0503 8.76076C58.1378 8.77343 58.2204 8.80906 58.2896 8.86402C58.3588 8.91898 58.4122 8.9913 58.4444 9.07363C58.4766 9.15595 58.4863 9.24533 58.4727 9.33265C58.4597 9.41586 58.426 9.49436 58.3746 9.56093L58.3182 9.62245L53.7043 14.1126L53.5157 14.2961L53.5602 14.5555L54.6512 20.9105L54.6512 20.9107C54.6663 20.9981 54.6578 21.088 54.6267 21.171C54.5955 21.2541 54.5429 21.3274 54.474 21.3833C54.4052 21.4393 54.3228 21.476 54.2351 21.4896C54.1513 21.5026 54.0656 21.494 53.9861 21.4648L53.9132 21.4313L48.2321 18.4376L47.9993 18.3149L47.7663 18.4374L42.0603 21.4374L42.0601 21.4375C41.9817 21.4787 41.8937 21.4984 41.8052 21.4945C41.7167 21.4906 41.6308 21.4632 41.5563 21.4152C41.4818 21.3672 41.4215 21.3002 41.3814 21.2212C41.3431 21.1458 41.3246 21.062 41.3276 20.9776L41.337 20.8976L42.4248 14.5554L42.4693 14.2961L42.2808 14.1126L37.6588 9.61363L37.6583 9.61318C37.5948 9.55154 37.5488 9.47415 37.525 9.38892C37.5012 9.30369 37.5005 9.21367 37.5228 9.12805C37.5452 9.04243 37.5899 8.96428 37.6523 8.90159C37.7119 8.84176 37.7857 8.79805 37.8666 8.77445L37.9488 8.75771L44.3148 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip2_6818_2344)">
-                                                <path d="M80.3148 7.83475L80.575 7.79702L80.6914 7.56123L83.5444 1.78123L83.5445 1.78094C83.5858 1.69721 83.6497 1.6267 83.7289 1.57739C83.8082 1.52808 83.8997 1.50195 83.993 1.50195C84.0864 1.50195 84.1778 1.52808 84.2571 1.57739C84.3364 1.6267 84.4002 1.69721 84.4415 1.78094L84.4416 1.78117L87.2936 7.56117L87.41 7.79697L87.6702 7.83474L94.0502 8.76074L94.0503 8.76076C94.1378 8.77343 94.2204 8.80906 94.2896 8.86402C94.3588 8.91898 94.4122 8.9913 94.4444 9.07363C94.4766 9.15595 94.4863 9.24533 94.4727 9.33265C94.4597 9.41586 94.426 9.49436 94.3746 9.56093L94.3182 9.62245L89.7043 14.1126L89.5157 14.2961L89.5602 14.5555L90.6512 20.9105L90.6512 20.9107C90.6663 20.9981 90.6578 21.088 90.6267 21.171C90.5955 21.2541 90.5429 21.3274 90.474 21.3833C90.4052 21.4393 90.3228 21.476 90.2351 21.4896C90.1513 21.5026 90.0656 21.494 89.9861 21.4648L89.9132 21.4313L84.2321 18.4376L83.9993 18.3149L83.7663 18.4374L78.0603 21.4374L78.0601 21.4375C77.9817 21.4787 77.8937 21.4984 77.8052 21.4945C77.7167 21.4906 77.6308 21.4632 77.5563 21.4152C77.4818 21.3672 77.4215 21.3002 77.3814 21.2212C77.3431 21.1458 77.3246 21.062 77.3276 20.9776L77.337 20.8976L78.4248 14.5554L78.4693 14.2961L78.2808 14.1126L73.6588 9.61363L73.6583 9.61318C73.5948 9.55154 73.5488 9.47415 73.525 9.38892C73.5012 9.30369 73.5005 9.21367 73.5228 9.12805C73.5452 9.04243 73.5899 8.96428 73.6523 8.90159C73.7119 8.84176 73.7857 8.79805 73.8666 8.77445L73.9488 8.75771L80.3148 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip3_6818_2344)">
-                                                <path d="M116.315 7.83475L116.575 7.79702L116.691 7.56123L119.544 1.78123L119.545 1.78094C119.586 1.69721 119.65 1.6267 119.729 1.57739C119.808 1.52808 119.9 1.50195 119.993 1.50195C120.086 1.50195 120.178 1.52808 120.257 1.57739C120.336 1.6267 120.4 1.69721 120.442 1.78094L120.442 1.78117L123.294 7.56117L123.41 7.79697L123.67 7.83474L130.05 8.76074L130.05 8.76076C130.138 8.77343 130.22 8.80906 130.29 8.86402C130.359 8.91898 130.412 8.9913 130.444 9.07363C130.477 9.15595 130.486 9.24533 130.473 9.33265C130.46 9.41586 130.426 9.49436 130.375 9.56093L130.318 9.62245L125.704 14.1126L125.516 14.2961L125.56 14.5555L126.651 20.9105L126.651 20.9107C126.666 20.9981 126.658 21.088 126.627 21.171C126.596 21.2541 126.543 21.3274 126.474 21.3833C126.405 21.4393 126.323 21.476 126.235 21.4896C126.151 21.5026 126.066 21.494 125.986 21.4648L125.913 21.4313L120.232 18.4376L119.999 18.3149L119.766 18.4374L114.06 21.4374L114.06 21.4375C113.982 21.4787 113.894 21.4984 113.805 21.4945C113.717 21.4906 113.631 21.4632 113.556 21.4152C113.482 21.3672 113.421 21.3002 113.381 21.2212C113.343 21.1458 113.325 21.062 113.328 20.9776L113.337 20.8976L114.425 14.5554L114.469 14.2961L114.281 14.1126L109.659 9.61363L109.658 9.61318C109.595 9.55154 109.549 9.47415 109.525 9.38892C109.501 9.30369 109.5 9.21367 109.523 9.12805C109.545 9.04243 109.59 8.96428 109.652 8.90159C109.712 8.84176 109.786 8.79805 109.867 8.77445L109.949 8.75771L116.315 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip4_6818_2344)">
-                                                <path d="M156 17.75L149.828 20.995L151.007 14.122L146.007 9.25495L152.907 8.25495L155.993 2.00195L159.079 8.25495L165.979 9.25495L160.979 14.122L162.158 20.995L156 17.75Z" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_6818_2344">
-                                                <rect width="24" height="24" fill="white"/>
-                                                </clipPath>
-                                                <clipPath id="clip1_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(36)"/>
-                                                </clipPath>
-                                                <clipPath id="clip2_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(72)"/>
-                                                </clipPath>
-                                                <clipPath id="clip3_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(108)"/>
-                                                </clipPath>
-                                                <clipPath id="clip4_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(144)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <div class="text-m-14 grey-light">20.07.2022</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="reviews-slide_block">
-                                        <div class="reviews-slide_top">
-                                            <div class="text-m">Сергей</div>
-                                            <div class="text-s-16 grey-light">употреблял 7 лет, алкоголь</div>
-                                        </div>
-                                        <div class="reviews-slide_description">
-                                            <img class="rew-image" src="assest/main/rew1.png" alt="">
-                                        </div>
-                                        <div class="reviews-slide_bottom">
-                                            <svg class="reviews-stars" xmlns="http://www.w3.org/2000/svg" width="168" height="24" viewBox="0 0 168 24" fill="none">
-                                                <g clip-path="url(#clip0_6818_2344)">
-                                                <path d="M8.31475 7.83475L8.57498 7.79702L8.69137 7.56123L11.5444 1.78123L11.5445 1.78094C11.5858 1.69721 11.6497 1.6267 11.7289 1.57739C11.8082 1.52808 11.8997 1.50195 11.993 1.50195C12.0864 1.50195 12.1778 1.52808 12.2571 1.57739C12.3364 1.6267 12.4002 1.69721 12.4415 1.78094L12.4416 1.78117L15.2936 7.56117L15.41 7.79697L15.6702 7.83474L22.0502 8.76074L22.0503 8.76076C22.1378 8.77343 22.2204 8.80906 22.2896 8.86402C22.3588 8.91898 22.4122 8.9913 22.4444 9.07363C22.4766 9.15595 22.4863 9.24533 22.4727 9.33265C22.4597 9.41586 22.426 9.49436 22.3746 9.56093L22.3182 9.62245L17.7043 14.1126L17.5157 14.2961L17.5602 14.5555L18.6512 20.9105L18.6512 20.9107C18.6663 20.9981 18.6578 21.088 18.6267 21.171C18.5955 21.2541 18.5429 21.3274 18.474 21.3833C18.4052 21.4393 18.3228 21.476 18.2351 21.4896C18.1513 21.5026 18.0656 21.494 17.9861 21.4648L17.9132 21.4313L12.2321 18.4376L11.9993 18.3149L11.7663 18.4374L6.06033 21.4374L6.06013 21.4375C5.98172 21.4787 5.89374 21.4984 5.80521 21.4945C5.71668 21.4906 5.63078 21.4632 5.5563 21.4152C5.48183 21.3672 5.42145 21.3002 5.38136 21.2212C5.3431 21.1458 5.32462 21.062 5.32757 20.9776L5.33702 20.8976L6.42481 14.5554L6.46929 14.2961L6.28076 14.1126L1.65876 9.61363L1.6583 9.61318C1.59481 9.55154 1.54881 9.47415 1.52501 9.38892C1.50121 9.30369 1.50046 9.21367 1.52283 9.12805C1.5452 9.04243 1.5899 8.96428 1.65235 8.90159C1.71194 8.84176 1.78566 8.79805 1.86659 8.77445L1.94881 8.75771L8.31475 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip1_6818_2344)">
-                                                <path d="M44.3148 7.83475L44.575 7.79702L44.6914 7.56123L47.5444 1.78123L47.5445 1.78094C47.5858 1.69721 47.6497 1.6267 47.7289 1.57739C47.8082 1.52808 47.8997 1.50195 47.993 1.50195C48.0864 1.50195 48.1778 1.52808 48.2571 1.57739C48.3364 1.6267 48.4002 1.69721 48.4415 1.78094L48.4416 1.78117L51.2936 7.56117L51.41 7.79697L51.6702 7.83474L58.0502 8.76074L58.0503 8.76076C58.1378 8.77343 58.2204 8.80906 58.2896 8.86402C58.3588 8.91898 58.4122 8.9913 58.4444 9.07363C58.4766 9.15595 58.4863 9.24533 58.4727 9.33265C58.4597 9.41586 58.426 9.49436 58.3746 9.56093L58.3182 9.62245L53.7043 14.1126L53.5157 14.2961L53.5602 14.5555L54.6512 20.9105L54.6512 20.9107C54.6663 20.9981 54.6578 21.088 54.6267 21.171C54.5955 21.2541 54.5429 21.3274 54.474 21.3833C54.4052 21.4393 54.3228 21.476 54.2351 21.4896C54.1513 21.5026 54.0656 21.494 53.9861 21.4648L53.9132 21.4313L48.2321 18.4376L47.9993 18.3149L47.7663 18.4374L42.0603 21.4374L42.0601 21.4375C41.9817 21.4787 41.8937 21.4984 41.8052 21.4945C41.7167 21.4906 41.6308 21.4632 41.5563 21.4152C41.4818 21.3672 41.4215 21.3002 41.3814 21.2212C41.3431 21.1458 41.3246 21.062 41.3276 20.9776L41.337 20.8976L42.4248 14.5554L42.4693 14.2961L42.2808 14.1126L37.6588 9.61363L37.6583 9.61318C37.5948 9.55154 37.5488 9.47415 37.525 9.38892C37.5012 9.30369 37.5005 9.21367 37.5228 9.12805C37.5452 9.04243 37.5899 8.96428 37.6523 8.90159C37.7119 8.84176 37.7857 8.79805 37.8666 8.77445L37.9488 8.75771L44.3148 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip2_6818_2344)">
-                                                <path d="M80.3148 7.83475L80.575 7.79702L80.6914 7.56123L83.5444 1.78123L83.5445 1.78094C83.5858 1.69721 83.6497 1.6267 83.7289 1.57739C83.8082 1.52808 83.8997 1.50195 83.993 1.50195C84.0864 1.50195 84.1778 1.52808 84.2571 1.57739C84.3364 1.6267 84.4002 1.69721 84.4415 1.78094L84.4416 1.78117L87.2936 7.56117L87.41 7.79697L87.6702 7.83474L94.0502 8.76074L94.0503 8.76076C94.1378 8.77343 94.2204 8.80906 94.2896 8.86402C94.3588 8.91898 94.4122 8.9913 94.4444 9.07363C94.4766 9.15595 94.4863 9.24533 94.4727 9.33265C94.4597 9.41586 94.426 9.49436 94.3746 9.56093L94.3182 9.62245L89.7043 14.1126L89.5157 14.2961L89.5602 14.5555L90.6512 20.9105L90.6512 20.9107C90.6663 20.9981 90.6578 21.088 90.6267 21.171C90.5955 21.2541 90.5429 21.3274 90.474 21.3833C90.4052 21.4393 90.3228 21.476 90.2351 21.4896C90.1513 21.5026 90.0656 21.494 89.9861 21.4648L89.9132 21.4313L84.2321 18.4376L83.9993 18.3149L83.7663 18.4374L78.0603 21.4374L78.0601 21.4375C77.9817 21.4787 77.8937 21.4984 77.8052 21.4945C77.7167 21.4906 77.6308 21.4632 77.5563 21.4152C77.4818 21.3672 77.4215 21.3002 77.3814 21.2212C77.3431 21.1458 77.3246 21.062 77.3276 20.9776L77.337 20.8976L78.4248 14.5554L78.4693 14.2961L78.2808 14.1126L73.6588 9.61363L73.6583 9.61318C73.5948 9.55154 73.5488 9.47415 73.525 9.38892C73.5012 9.30369 73.5005 9.21367 73.5228 9.12805C73.5452 9.04243 73.5899 8.96428 73.6523 8.90159C73.7119 8.84176 73.7857 8.79805 73.8666 8.77445L73.9488 8.75771L80.3148 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip3_6818_2344)">
-                                                <path d="M116.315 7.83475L116.575 7.79702L116.691 7.56123L119.544 1.78123L119.545 1.78094C119.586 1.69721 119.65 1.6267 119.729 1.57739C119.808 1.52808 119.9 1.50195 119.993 1.50195C120.086 1.50195 120.178 1.52808 120.257 1.57739C120.336 1.6267 120.4 1.69721 120.442 1.78094L120.442 1.78117L123.294 7.56117L123.41 7.79697L123.67 7.83474L130.05 8.76074L130.05 8.76076C130.138 8.77343 130.22 8.80906 130.29 8.86402C130.359 8.91898 130.412 8.9913 130.444 9.07363C130.477 9.15595 130.486 9.24533 130.473 9.33265C130.46 9.41586 130.426 9.49436 130.375 9.56093L130.318 9.62245L125.704 14.1126L125.516 14.2961L125.56 14.5555L126.651 20.9105L126.651 20.9107C126.666 20.9981 126.658 21.088 126.627 21.171C126.596 21.2541 126.543 21.3274 126.474 21.3833C126.405 21.4393 126.323 21.476 126.235 21.4896C126.151 21.5026 126.066 21.494 125.986 21.4648L125.913 21.4313L120.232 18.4376L119.999 18.3149L119.766 18.4374L114.06 21.4374L114.06 21.4375C113.982 21.4787 113.894 21.4984 113.805 21.4945C113.717 21.4906 113.631 21.4632 113.556 21.4152C113.482 21.3672 113.421 21.3002 113.381 21.2212C113.343 21.1458 113.325 21.062 113.328 20.9776L113.337 20.8976L114.425 14.5554L114.469 14.2961L114.281 14.1126L109.659 9.61363L109.658 9.61318C109.595 9.55154 109.549 9.47415 109.525 9.38892C109.501 9.30369 109.5 9.21367 109.523 9.12805C109.545 9.04243 109.59 8.96428 109.652 8.90159C109.712 8.84176 109.786 8.79805 109.867 8.77445L109.949 8.75771L116.315 7.83475Z" fill="#0982C6" stroke="#0982C6"/>
-                                                </g>
-                                                <g clip-path="url(#clip4_6818_2344)">
-                                                <path d="M156 17.75L149.828 20.995L151.007 14.122L146.007 9.25495L152.907 8.25495L155.993 2.00195L159.079 8.25495L165.979 9.25495L160.979 14.122L162.158 20.995L156 17.75Z" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_6818_2344">
-                                                <rect width="24" height="24" fill="white"/>
-                                                </clipPath>
-                                                <clipPath id="clip1_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(36)"/>
-                                                </clipPath>
-                                                <clipPath id="clip2_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(72)"/>
-                                                </clipPath>
-                                                <clipPath id="clip3_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(108)"/>
-                                                </clipPath>
-                                                <clipPath id="clip4_6818_2344">
-                                                <rect width="24" height="24" fill="white" transform="translate(144)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                            <div class="text-m-14 grey-light">20.07.2022</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-         </section>
-        <!-- контакты -->
         <section>
             <div class="container">
-                <div class="contacts-content">
-                    <div class="contacts-content_top">
-                        <div class="h1">контакты</div>
-                        <div class="contacts-top_templ">
-                            <div class="contacts-top_templ-block">
-                                <div class="text-i-16 grey-light text-upp">адрес</div>
-                                <div class="text-s-20">Сочи, ул. Яна Фабрициуса, 12</div>
-                            </div>
-                            <div class="contacts-top_templ-block">
-                                <div class="text-i-16 grey-light text-upp">Телефон</div>
-                                <a href="tel:+7862225-71-57" class="text-s-20">+ 7 (862) 225-71-57</a>
-                            </div>
-                            <div class="contacts-top_templ-block">
-                                <div class="text-i-16 grey-light text-upp">Email</div>
-                                <div class="text-s-20">next24@mail.ru</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contacts-content_bottom">
-                        <div class="contacts-content_bottom-left">
-                            <div class="contacts-bottom_left-block">
-                                <div class="text-i-20 grey-light text-upp">Не откладывайте – задайте вопрос уже сейчас!</div>
-                                <button class="button-text button-body">Получить консультацию 
-                                    <span class="btn-circle">
-                                        <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <g clip-path="url(#clip0_6900_492)">
-                                            <path d="M6 4L10 8L6 12" stroke="#0982C6" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_6900_492">
-                                            <rect width="16" height="16" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="footer-bottom_block-seo no-flex ">
-                                <a href="">
-                                    <svg class="footer-seo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                        <path d="M24.0547 0H23.9453C10.7207 0 0 10.7207 0 23.9453V24.0547C0 37.2793 10.7207 48 23.9453 48H24.0547C37.2793 48 48 37.2793 48 24.0547V23.9453C48 10.7207 37.2793 0 24.0547 0Z" fill="#00B0F2"/>
-                                        <path d="M9.09084 23.1817C9.1581 23.148 9.2254 23.1161 9.29099 23.0858C10.4312 22.5578 11.5865 22.0634 12.7401 21.569C12.8023 21.569 12.9066 21.4966 12.9654 21.4731C13.0545 21.4344 13.1437 21.3974 13.2328 21.3587L13.7457 21.1384C14.0888 20.9921 14.4302 20.8458 14.7732 20.6995C15.4577 20.4069 16.1421 20.1143 16.8265 19.82C18.1954 19.2348 19.566 18.6479 20.9349 18.0627C22.3038 17.4774 23.6743 16.8905 25.0432 16.3053C26.4121 15.7201 27.7826 15.1332 29.1515 14.548C30.5204 13.9627 31.891 13.3758 33.2599 12.7906C33.5643 12.6595 33.8939 12.4644 34.2201 12.4072C34.4942 12.3584 34.7616 12.2643 35.0374 12.2121C35.5604 12.1129 36.1372 12.0725 36.6383 12.2895C36.8116 12.3652 36.9713 12.4711 37.1042 12.604C37.7398 13.2329 37.6507 14.2654 37.5162 15.15C36.5795 21.315 35.6428 27.4817 34.7044 33.6467C34.5766 34.4926 34.4017 35.4209 33.7341 35.9557C33.169 36.408 32.3652 36.4585 31.6673 36.2668C30.9694 36.0734 30.3539 35.6681 29.7502 35.2695C27.2462 33.6114 24.7405 31.9533 22.2365 30.2952C21.6412 29.9016 20.9786 29.3871 20.9854 28.6723C20.9887 28.2418 21.246 27.8584 21.5083 27.517C23.6844 24.6784 26.8241 22.7276 29.1599 20.0201C29.4896 19.6384 29.7485 18.9489 29.2962 18.7286C29.0271 18.5974 28.7177 18.7757 28.4721 18.9455C25.3846 21.0897 22.2987 23.2355 19.2112 25.3796C18.2039 26.0792 17.1478 26.799 15.9336 26.9705C14.8472 27.1252 13.7542 26.8225 12.7031 26.5131C11.8219 26.2541 10.9424 25.9884 10.0662 25.7143C9.60039 25.5697 9.11943 25.4133 8.75955 25.0853C8.39967 24.7574 8.19286 24.2058 8.40979 23.7686C8.54601 23.4945 8.81004 23.3213 9.08751 23.18L9.09084 23.1817Z" fill="#FEFFFC"/>
-                                    </svg>
-                                </a>
-                                <a href="">
-                                    <svg class="footer-seo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                        <circle cx="24" cy="24" r="24" fill="#0076FE"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M38.503 16.4121C38.7169 15.6992 38.503 15.2002 37.505 15.2002H34.1783C33.3228 15.2002 32.9426 15.6517 32.7288 16.1507C32.7288 16.1507 31.0416 20.2853 28.6416 22.9467C27.8575 23.7309 27.5248 23.9685 27.0971 23.9685C26.8832 23.9685 26.5743 23.7309 26.5743 23.018V16.4121C26.5743 15.5566 26.3367 15.2002 25.6238 15.2002H20.3961C19.8733 15.2002 19.5406 15.6042 19.5406 15.9606C19.5406 16.7685 20.7288 16.9586 20.8713 19.1923V24.0873C20.8713 25.1566 20.6812 25.3467 20.2535 25.3467C19.1367 25.3467 16.3802 21.2121 14.7644 16.4596C14.4317 15.5804 14.1228 15.2002 13.2674 15.2002H9.94064C8.99015 15.2002 8.80005 15.6517 8.80005 16.1507C8.80005 17.0299 9.91688 21.4022 14.0515 27.1764C16.808 31.121 20.6812 33.2596 24.1981 33.2596C26.3129 33.2596 26.5743 32.7844 26.5743 31.9764V28.9824C26.5743 28.0319 26.7644 27.8418 27.4535 27.8418C27.9525 27.8418 28.7842 28.0794 30.7565 29.9804C33.0139 32.2378 33.3941 33.2596 34.6535 33.2596H37.9802C38.9307 33.2596 39.406 32.7844 39.1208 31.8576C38.8119 30.9309 37.7426 29.5764 36.3169 27.9606C35.5327 27.0339 34.3684 26.0596 34.0357 25.5606C33.5367 24.919 33.6793 24.6339 34.0357 24.0873C34.0357 24.0636 38.0991 18.3606 38.503 16.4121Z" fill="white"/>
-                                    </svg>
-                                </a>
-                                <a href="">
-                                    <svg class="footer-seo" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                                        <path d="M43.0182 21.0264C43.022 21.0264 43.0249 21.0264 43.0288 21.0264C43.2966 21.0264 43.552 20.914 43.7334 20.7172C43.9177 20.5175 44.0089 20.2497 43.9849 19.979C43.0211 9.37771 34.6278 0.981549 24.0256 0.015789C23.7568 -0.00533099 23.486 0.0820291 23.2864 0.267309C23.0867 0.451629 22.9753 0.711789 22.9782 0.983469C23.1452 15.0724 25.0038 20.8295 43.0182 21.0264ZM43.0182 22.9732C25.0038 23.17 23.1462 28.9271 22.9792 43.0161C22.9763 43.2878 23.0876 43.548 23.2873 43.7323C23.4659 43.8964 23.6992 43.9876 23.9392 43.9876C23.968 43.9876 23.9977 43.9867 24.0265 43.9838C34.6288 43.018 43.022 34.6228 43.9849 24.0206C44.0089 23.7499 43.9187 23.482 43.7334 23.2824C43.5481 23.0827 43.2899 22.9838 43.0182 22.9732ZM19.91 0.0205891C9.34141 1.01419 0.975006 9.40843 0.0159657 19.9809C-0.00803427 20.2516 0.0822058 20.5195 0.267486 20.7192C0.448926 20.916 0.705246 21.0273 0.972126 21.0273C0.975966 21.0273 0.979806 21.0273 0.983646 21.0273C18.9385 20.8209 20.7923 15.0667 20.9612 0.987309C20.9641 0.715629 20.8518 0.454509 20.6521 0.270189C20.4505 0.0858691 20.1808 -0.00437088 19.91 0.0205891ZM0.982686 22.9723C0.684126 22.9387 0.449886 23.0807 0.266526 23.2804C0.0822059 23.4801 -0.0089942 23.748 0.0150058 24.0187C0.974046 34.5912 9.34141 42.9854 19.91 43.979C19.9398 43.9819 19.9705 43.9828 20.0003 43.9828C20.2403 43.9828 20.4726 43.8926 20.6512 43.7284C20.8508 43.5441 20.9632 43.283 20.9603 43.0113C20.7913 28.9329 18.9385 23.1787 0.982686 22.9723Z" fill="black"/>
-                                    </svg>
-                                </a>
-                               
-                            </div>
-                        </div>
-                        <div class="block-map">
-                            <div id="map" class="map"></div>
-                        </div>
-                        <div class="footer-bottom_block-seo on-flex">
-                            <a href="">
-                                <svg class="footer-seo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                    <path d="M24.0547 0H23.9453C10.7207 0 0 10.7207 0 23.9453V24.0547C0 37.2793 10.7207 48 23.9453 48H24.0547C37.2793 48 48 37.2793 48 24.0547V23.9453C48 10.7207 37.2793 0 24.0547 0Z" fill="#00B0F2"/>
-                                    <path d="M9.09084 23.1817C9.1581 23.148 9.2254 23.1161 9.29099 23.0858C10.4312 22.5578 11.5865 22.0634 12.7401 21.569C12.8023 21.569 12.9066 21.4966 12.9654 21.4731C13.0545 21.4344 13.1437 21.3974 13.2328 21.3587L13.7457 21.1384C14.0888 20.9921 14.4302 20.8458 14.7732 20.6995C15.4577 20.4069 16.1421 20.1143 16.8265 19.82C18.1954 19.2348 19.566 18.6479 20.9349 18.0627C22.3038 17.4774 23.6743 16.8905 25.0432 16.3053C26.4121 15.7201 27.7826 15.1332 29.1515 14.548C30.5204 13.9627 31.891 13.3758 33.2599 12.7906C33.5643 12.6595 33.8939 12.4644 34.2201 12.4072C34.4942 12.3584 34.7616 12.2643 35.0374 12.2121C35.5604 12.1129 36.1372 12.0725 36.6383 12.2895C36.8116 12.3652 36.9713 12.4711 37.1042 12.604C37.7398 13.2329 37.6507 14.2654 37.5162 15.15C36.5795 21.315 35.6428 27.4817 34.7044 33.6467C34.5766 34.4926 34.4017 35.4209 33.7341 35.9557C33.169 36.408 32.3652 36.4585 31.6673 36.2668C30.9694 36.0734 30.3539 35.6681 29.7502 35.2695C27.2462 33.6114 24.7405 31.9533 22.2365 30.2952C21.6412 29.9016 20.9786 29.3871 20.9854 28.6723C20.9887 28.2418 21.246 27.8584 21.5083 27.517C23.6844 24.6784 26.8241 22.7276 29.1599 20.0201C29.4896 19.6384 29.7485 18.9489 29.2962 18.7286C29.0271 18.5974 28.7177 18.7757 28.4721 18.9455C25.3846 21.0897 22.2987 23.2355 19.2112 25.3796C18.2039 26.0792 17.1478 26.799 15.9336 26.9705C14.8472 27.1252 13.7542 26.8225 12.7031 26.5131C11.8219 26.2541 10.9424 25.9884 10.0662 25.7143C9.60039 25.5697 9.11943 25.4133 8.75955 25.0853C8.39967 24.7574 8.19286 24.2058 8.40979 23.7686C8.54601 23.4945 8.81004 23.3213 9.08751 23.18L9.09084 23.1817Z" fill="#FEFFFC"/>
-                                </svg>
-                            </a>
-                            <a href="">
-                                <svg class="footer-seo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                    <circle cx="24" cy="24" r="24" fill="#0076FE"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M38.503 16.4121C38.7169 15.6992 38.503 15.2002 37.505 15.2002H34.1783C33.3228 15.2002 32.9426 15.6517 32.7288 16.1507C32.7288 16.1507 31.0416 20.2853 28.6416 22.9467C27.8575 23.7309 27.5248 23.9685 27.0971 23.9685C26.8832 23.9685 26.5743 23.7309 26.5743 23.018V16.4121C26.5743 15.5566 26.3367 15.2002 25.6238 15.2002H20.3961C19.8733 15.2002 19.5406 15.6042 19.5406 15.9606C19.5406 16.7685 20.7288 16.9586 20.8713 19.1923V24.0873C20.8713 25.1566 20.6812 25.3467 20.2535 25.3467C19.1367 25.3467 16.3802 21.2121 14.7644 16.4596C14.4317 15.5804 14.1228 15.2002 13.2674 15.2002H9.94064C8.99015 15.2002 8.80005 15.6517 8.80005 16.1507C8.80005 17.0299 9.91688 21.4022 14.0515 27.1764C16.808 31.121 20.6812 33.2596 24.1981 33.2596C26.3129 33.2596 26.5743 32.7844 26.5743 31.9764V28.9824C26.5743 28.0319 26.7644 27.8418 27.4535 27.8418C27.9525 27.8418 28.7842 28.0794 30.7565 29.9804C33.0139 32.2378 33.3941 33.2596 34.6535 33.2596H37.9802C38.9307 33.2596 39.406 32.7844 39.1208 31.8576C38.8119 30.9309 37.7426 29.5764 36.3169 27.9606C35.5327 27.0339 34.3684 26.0596 34.0357 25.5606C33.5367 24.919 33.6793 24.6339 34.0357 24.0873C34.0357 24.0636 38.0991 18.3606 38.503 16.4121Z" fill="white"/>
-                                </svg>
-                            </a>
-                            <a href="">
-                                <svg class="footer-seo" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                                    <path d="M43.0182 21.0264C43.022 21.0264 43.0249 21.0264 43.0288 21.0264C43.2966 21.0264 43.552 20.914 43.7334 20.7172C43.9177 20.5175 44.0089 20.2497 43.9849 19.979C43.0211 9.37771 34.6278 0.981549 24.0256 0.015789C23.7568 -0.00533099 23.486 0.0820291 23.2864 0.267309C23.0867 0.451629 22.9753 0.711789 22.9782 0.983469C23.1452 15.0724 25.0038 20.8295 43.0182 21.0264ZM43.0182 22.9732C25.0038 23.17 23.1462 28.9271 22.9792 43.0161C22.9763 43.2878 23.0876 43.548 23.2873 43.7323C23.4659 43.8964 23.6992 43.9876 23.9392 43.9876C23.968 43.9876 23.9977 43.9867 24.0265 43.9838C34.6288 43.018 43.022 34.6228 43.9849 24.0206C44.0089 23.7499 43.9187 23.482 43.7334 23.2824C43.5481 23.0827 43.2899 22.9838 43.0182 22.9732ZM19.91 0.0205891C9.34141 1.01419 0.975006 9.40843 0.0159657 19.9809C-0.00803427 20.2516 0.0822058 20.5195 0.267486 20.7192C0.448926 20.916 0.705246 21.0273 0.972126 21.0273C0.975966 21.0273 0.979806 21.0273 0.983646 21.0273C18.9385 20.8209 20.7923 15.0667 20.9612 0.987309C20.9641 0.715629 20.8518 0.454509 20.6521 0.270189C20.4505 0.0858691 20.1808 -0.00437088 19.91 0.0205891ZM0.982686 22.9723C0.684126 22.9387 0.449886 23.0807 0.266526 23.2804C0.0822059 23.4801 -0.0089942 23.748 0.0150058 24.0187C0.974046 34.5912 9.34141 42.9854 19.91 43.979C19.9398 43.9819 19.9705 43.9828 20.0003 43.9828C20.2403 43.9828 20.4726 43.8926 20.6512 43.7284C20.8508 43.5441 20.9632 43.283 20.9603 43.0113C20.7913 28.9329 18.9385 23.1787 0.982686 22.9723Z" fill="black"/>
-                                </svg>
-                            </a>
-                           
-                        </div>
-                    </div>
+                <div class="container_block">
+                    <a class="h1" href="main.html">Главная</a>
+                    <button class="text-32-400" id="openModalLast">Первый шаг сделан!</button>
+                    <button class="text-32-400 open-application">Консультации</button>
                 </div>
+               
             </div>
         </section>
-    </main>
-   
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-content_top">
-                    <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" width="915" height="196" viewBox="0 0 915 196" fill="none">
-                        <ellipse cx="125.688" cy="101.118" rx="95.018" ry="94.8818" fill="#698791"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M151.344 5.84731C143.29 3.77547 134.842 2.67285 126.133 2.67285C70.9456 2.67285 26.2076 46.9478 26.2076 101.564C26.2076 131.421 39.5777 158.188 60.7158 176.32C36.5497 158.571 20.856 129.901 20.856 97.5546C20.856 43.6767 64.3956 0 118.104 0C129.779 0 140.973 2.06371 151.344 5.84731Z" fill="#698791"/>
-                        <path d="M3.90381 131.408V81.5204C3.90381 78.5164 7.72555 77.2384 9.53251 79.6383L42.8845 123.933C44.6914 126.333 48.5132 125.055 48.5132 122.051V69.9355H114.981" stroke="#283442" stroke-width="6.25806" stroke-linecap="round"/>
-                        <path d="M78.4019 99.3359H114.535" stroke="#283442" stroke-width="6.25806" stroke-linecap="round"/>
-                        <path d="M77.9565 130.072H114.982" stroke="#283442" stroke-width="6.25806" stroke-linecap="round"/>
-                        <path d="M135.947 70.3809L183.679 130.963" stroke="#283442" stroke-width="6.25806" stroke-linecap="round"/>
-                        <path d="M132.826 131.409L153.346 104.236" stroke="#283442" stroke-width="6.25806" stroke-linecap="round"/>
-                        <path d="M161.821 95.7723L182.341 68.5996" stroke="#283442" stroke-width="6.25806" stroke-linecap="round"/>
-                        <path d="M196.172 70.3809H243.904" stroke="#283442" stroke-width="6.25806" stroke-linecap="round"/>
-                        <path d="M219.814 77.9551V131.41" stroke="#283442" stroke-width="6.25806" stroke-linecap="round"/>
-                        <path d="M288.494 86V47.66H304.478C306.17 47.66 307.718 48.02 309.122 48.74C310.526 49.424 311.75 50.36 312.794 51.548C313.838 52.7 314.648 54.014 315.224 55.49C315.8 56.93 316.088 58.406 316.088 59.918C316.088 62.006 315.62 64.004 314.684 65.912C313.748 67.784 312.434 69.314 310.742 70.502C309.05 71.654 307.07 72.23 304.802 72.23H293.354V86H288.494ZM293.354 67.91H304.532C305.864 67.91 307.016 67.55 307.988 66.83C308.996 66.11 309.77 65.138 310.31 63.914C310.886 62.69 311.174 61.358 311.174 59.918C311.174 58.406 310.85 57.056 310.202 55.868C309.554 54.644 308.708 53.69 307.664 53.006C306.62 52.322 305.468 51.98 304.208 51.98H293.354V67.91ZM348.166 81.68V86H322.138V47.66H347.68V51.98H326.998V64.4H344.98V68.45H326.998V81.68H348.166ZM366.498 47.66H370.602L386.262 86H381.078L376.542 74.768H360.45L355.968 86H350.784L366.498 47.66ZM375.462 70.988L368.55 53.276L361.422 70.988H375.462ZM391.379 86V47.66H417.677V51.926H396.239V64.022H408.227C412.439 64.022 415.571 65.012 417.623 66.992C419.711 68.972 420.755 71.564 420.755 74.768C420.755 76.892 420.305 78.8 419.405 80.492C418.505 82.184 417.155 83.534 415.355 84.542C413.555 85.514 411.287 86 408.551 86H391.379ZM396.239 81.734H407.957C409.829 81.734 411.341 81.392 412.493 80.708C413.645 80.024 414.473 79.142 414.977 78.062C415.517 76.946 415.787 75.794 415.787 74.606C415.787 73.454 415.553 72.374 415.085 71.366C414.617 70.322 413.807 69.494 412.655 68.882C411.503 68.234 409.883 67.91 407.795 67.91H396.239V81.734ZM427.139 86V47.66H431.999V79.25L454.193 47.66H458.729V86H453.869V55.004L431.945 86H427.139ZM493.54 86V51.98H479.23L479.014 59.594C478.834 64.814 478.438 69.152 477.826 72.608C477.25 76.028 476.404 78.728 475.288 80.708C474.208 82.652 472.858 84.038 471.238 84.866C469.618 85.694 467.692 86.108 465.46 86.108V81.842C466.828 81.842 468.034 81.5 469.078 80.816C470.122 80.132 471.004 78.944 471.724 77.252C472.48 75.524 473.074 73.13 473.506 70.07C473.938 67.01 474.226 63.104 474.37 58.352L474.694 47.66H498.4V86H493.54ZM507.875 86V47.66H512.735V79.25L534.929 47.66H539.465V86H534.605V55.004L512.681 86H507.875ZM576.544 51.98H563.314V86H558.454V51.98H545.224V47.66H576.544V51.98ZM590.144 47.66H594.248L609.908 86H604.724L600.188 74.768H584.096L579.614 86H574.43L590.144 47.66ZM599.108 70.988L592.196 53.276L585.068 70.988H599.108ZM644.023 93.29V86H615.025V47.66H619.885V81.68H638.731V47.66H643.591V81.68H648.343V93.29H644.023ZM655.11 86V47.66H659.97V79.25L682.164 47.66H686.7V86H681.84V55.004L659.916 86H655.11ZM711.683 86.27C708.983 86.27 706.535 85.73 704.339 84.65C702.143 83.57 700.235 82.112 698.615 80.276C697.031 78.404 695.807 76.316 694.943 74.012C694.079 71.672 693.647 69.278 693.647 66.83C693.647 64.274 694.097 61.844 694.997 59.54C695.933 57.2 697.211 55.13 698.831 53.33C700.487 51.494 702.413 50.054 704.609 49.01C706.805 47.93 709.199 47.39 711.791 47.39C714.491 47.39 716.939 47.948 719.135 49.064C721.331 50.18 723.221 51.674 724.805 53.546C726.389 55.418 727.613 57.506 728.477 59.81C729.341 62.114 729.773 64.472 729.773 66.884C729.773 69.44 729.323 71.888 728.423 74.228C727.523 76.532 726.245 78.602 724.589 80.438C722.969 82.238 721.061 83.66 718.865 84.704C716.669 85.748 714.275 86.27 711.683 86.27ZM698.561 66.83C698.561 68.774 698.867 70.664 699.479 72.5C700.127 74.3 701.027 75.902 702.179 77.306C703.331 78.71 704.717 79.826 706.337 80.654C707.957 81.482 709.757 81.896 711.737 81.896C713.789 81.896 715.625 81.464 717.245 80.6C718.865 79.736 720.233 78.584 721.349 77.144C722.501 75.704 723.365 74.084 723.941 72.284C724.553 70.484 724.859 68.666 724.859 66.83C724.859 64.886 724.535 63.014 723.887 61.214C723.275 59.414 722.375 57.812 721.187 56.408C720.035 54.968 718.649 53.852 717.029 53.06C715.445 52.232 713.681 51.818 711.737 51.818C709.685 51.818 707.849 52.25 706.229 53.114C704.609 53.942 703.223 55.076 702.071 56.516C700.955 57.956 700.091 59.576 699.479 61.376C698.867 63.14 698.561 64.958 698.561 66.83ZM767.359 47.66V86H762.499V68.558H741.385V86H736.525V47.66H741.385V64.238H762.499V47.66H767.359ZM807.384 47.66V86H802.524V68.558H781.41V86H776.55V47.66H781.41V64.238H802.524V47.66H807.384ZM816.576 86V47.66H821.436V62.186H830.616C833.424 62.186 835.764 62.69 837.636 63.698C839.508 64.67 840.912 66.056 841.848 67.856C842.82 69.62 843.306 71.69 843.306 74.066C843.306 76.298 842.838 78.332 841.902 80.168C840.966 81.968 839.58 83.39 837.744 84.434C835.908 85.478 833.64 86 830.94 86H816.576ZM821.436 81.95H830.292C832.2 81.95 833.748 81.59 834.936 80.87C836.124 80.114 836.988 79.142 837.528 77.954C838.068 76.73 838.338 75.434 838.338 74.066C838.338 72.698 838.086 71.42 837.582 70.232C837.114 69.044 836.286 68.09 835.098 67.37C833.91 66.614 832.29 66.236 830.238 66.236H821.436V81.95ZM849.678 86V47.714H854.538V86H849.678ZM863.99 86V47.66H868.85V79.25L891.044 47.66H895.58V86H890.72V55.004L868.796 86H863.99ZM879.812 44.798C877.94 44.798 876.356 44.51 875.06 43.934C873.764 43.358 872.792 42.566 872.144 41.558C871.496 40.55 871.172 39.434 871.172 38.21H874.898C874.898 39.146 875.24 40.01 875.924 40.802C876.644 41.558 877.94 41.936 879.812 41.936C881.612 41.936 882.872 41.594 883.592 40.91C884.312 40.19 884.672 39.29 884.672 38.21H888.398C888.398 39.434 888.074 40.55 887.426 41.558C886.778 42.566 885.824 43.358 884.564 43.934C883.304 44.51 881.72 44.798 879.812 44.798ZM317.492 156.29V149H288.494V110.66H293.354V144.68H312.2V110.66H317.06V144.68H321.812V156.29H317.492ZM354.336 144.68V149H328.308V110.66H353.85V114.98H333.168V127.4H351.15V131.45H333.168V144.68H354.336ZM391.838 110.66V149H386.978V131.558H365.864V149H361.004V110.66H365.864V127.238H386.978V110.66H391.838ZM428.677 114.98H415.447V149H410.587V114.98H397.357V110.66H428.677V114.98ZM434.199 149V110.66H450.183C451.875 110.66 453.423 111.02 454.827 111.74C456.231 112.424 457.455 113.36 458.499 114.548C459.543 115.7 460.353 117.014 460.929 118.49C461.505 119.93 461.793 121.406 461.793 122.918C461.793 125.006 461.325 127.004 460.389 128.912C459.453 130.784 458.139 132.314 456.447 133.502C454.755 134.654 452.775 135.23 450.507 135.23H439.059V149H434.199ZM439.059 130.91H450.237C451.569 130.91 452.721 130.55 453.693 129.83C454.701 129.11 455.475 128.138 456.015 126.914C456.591 125.69 456.879 124.358 456.879 122.918C456.879 121.406 456.555 120.056 455.907 118.868C455.259 117.644 454.413 116.69 453.369 116.006C452.325 115.322 451.173 114.98 449.913 114.98H439.059V130.91Z" fill="#283442"/>
+        <div class="modal menu-modal-step">
+            <div class="modal-content-step">
+                <div class="modal-content_fon"></div>
+                <button class="close-button">
+                    <svg class="close-menu_icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <g clip-path="url(#clip0_6861_3319)">
+                            <path d="M30 10L10 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 10L30 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_6861_3319">
+                                <rect width="40" height="40" fill="white"/>
+                            </clipPath>
+                        </defs>
                     </svg>
-                    <div class="footer-content_top-rigth">
-                        <div class="footer-top_block">
-                            <div class="footer-h">адрес</div>
-                            <div class="footer-block_adr">
-                                <div class="text-s-16">Сочи, ул. Яна Фабрициуса, 12</div>
-                            </div>
-                        </div>
-                        <div class="footer-top_block">
-                            <div class="footer-h">контакты</div>
-                            <div class="footer-block_adr">
-                                <a class="text-s-16" href="tel:+78622257157">+ 7 (862) 225-71-57</a>
-                                <div class="text-s-16">next24@mail.ru</div>
-                            </div>
-                        </div>
-                    </div>
+                </button>
+                <div class="modal-image">
+                    <img src="assest/main/Rectanglemodal.png" alt="Description" />
                 </div>
-                <div class="footer-content_bottom">
-                    <div class="footer-content_bottom-anchors">
-                        <div class="footer-anchors_block">
-                            <a href="" class="text-menu-18">реабилитация</a>
-                            <a href="" class="text-menu-18">о нас</a>
-                            <a href="" class="text-menu-18">услуги</a>
-                            <a href="" class="text-menu-18">программы</a>
-                            <a href="" class="text-menu-18">сертификаты</a>
-                            <a href="" class="text-menu-18">специалисты</a>
-                            <a href="" class="text-menu-18">отзывы</a>
-                            <a href="" class="text-menu-18">контакты</a>
-                        </div>
+                <div class="modal-text">
+                    <div class="h1">Первый шаг сделан!</div>
+                    <div class="modal-text_p">
+                        <p class="text-s-24">Вы на правильном пути – осознание проблемы и обращение за помощью уже половина успеха.</p>
+                        <p class="text-s-24">Наш специалист свяжется с вами в ближайшее время, чтобы обсудить детали и ответить на ваши вопросы.</p>
+                        <p class="text-s-24">Вы не одни – мы рядом!</p>
                     </div>
-                    <div class="footer-bottom_block">
-                        <div class="footer-bottom_block-a">
-                            <a href="" class="footer-small">Политика конфиденциальности</a>
-                            <a href="" class="footer-small">Согласие на обработку персональных данных</a>
-                        </div>
-                        <div class="footer-bottom_block-seo">
-                            <a href="">
-                                <svg class="footer-seo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                    <path d="M24.0547 0H23.9453C10.7207 0 0 10.7207 0 23.9453V24.0547C0 37.2793 10.7207 48 23.9453 48H24.0547C37.2793 48 48 37.2793 48 24.0547V23.9453C48 10.7207 37.2793 0 24.0547 0Z" fill="#00B0F2"/>
-                                    <path d="M9.09084 23.1817C9.1581 23.148 9.2254 23.1161 9.29099 23.0858C10.4312 22.5578 11.5865 22.0634 12.7401 21.569C12.8023 21.569 12.9066 21.4966 12.9654 21.4731C13.0545 21.4344 13.1437 21.3974 13.2328 21.3587L13.7457 21.1384C14.0888 20.9921 14.4302 20.8458 14.7732 20.6995C15.4577 20.4069 16.1421 20.1143 16.8265 19.82C18.1954 19.2348 19.566 18.6479 20.9349 18.0627C22.3038 17.4774 23.6743 16.8905 25.0432 16.3053C26.4121 15.7201 27.7826 15.1332 29.1515 14.548C30.5204 13.9627 31.891 13.3758 33.2599 12.7906C33.5643 12.6595 33.8939 12.4644 34.2201 12.4072C34.4942 12.3584 34.7616 12.2643 35.0374 12.2121C35.5604 12.1129 36.1372 12.0725 36.6383 12.2895C36.8116 12.3652 36.9713 12.4711 37.1042 12.604C37.7398 13.2329 37.6507 14.2654 37.5162 15.15C36.5795 21.315 35.6428 27.4817 34.7044 33.6467C34.5766 34.4926 34.4017 35.4209 33.7341 35.9557C33.169 36.408 32.3652 36.4585 31.6673 36.2668C30.9694 36.0734 30.3539 35.6681 29.7502 35.2695C27.2462 33.6114 24.7405 31.9533 22.2365 30.2952C21.6412 29.9016 20.9786 29.3871 20.9854 28.6723C20.9887 28.2418 21.246 27.8584 21.5083 27.517C23.6844 24.6784 26.8241 22.7276 29.1599 20.0201C29.4896 19.6384 29.7485 18.9489 29.2962 18.7286C29.0271 18.5974 28.7177 18.7757 28.4721 18.9455C25.3846 21.0897 22.2987 23.2355 19.2112 25.3796C18.2039 26.0792 17.1478 26.799 15.9336 26.9705C14.8472 27.1252 13.7542 26.8225 12.7031 26.5131C11.8219 26.2541 10.9424 25.9884 10.0662 25.7143C9.60039 25.5697 9.11943 25.4133 8.75955 25.0853C8.39967 24.7574 8.19286 24.2058 8.40979 23.7686C8.54601 23.4945 8.81004 23.3213 9.08751 23.18L9.09084 23.1817Z" fill="#FEFFFC"/>
-                                </svg>
-                            </a>
-                            <a href="">
-                                <svg class="footer-seo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                    <circle cx="24" cy="24" r="24" fill="#0076FE"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M38.503 16.4121C38.7169 15.6992 38.503 15.2002 37.505 15.2002H34.1783C33.3228 15.2002 32.9426 15.6517 32.7288 16.1507C32.7288 16.1507 31.0416 20.2853 28.6416 22.9467C27.8575 23.7309 27.5248 23.9685 27.0971 23.9685C26.8832 23.9685 26.5743 23.7309 26.5743 23.018V16.4121C26.5743 15.5566 26.3367 15.2002 25.6238 15.2002H20.3961C19.8733 15.2002 19.5406 15.6042 19.5406 15.9606C19.5406 16.7685 20.7288 16.9586 20.8713 19.1923V24.0873C20.8713 25.1566 20.6812 25.3467 20.2535 25.3467C19.1367 25.3467 16.3802 21.2121 14.7644 16.4596C14.4317 15.5804 14.1228 15.2002 13.2674 15.2002H9.94064C8.99015 15.2002 8.80005 15.6517 8.80005 16.1507C8.80005 17.0299 9.91688 21.4022 14.0515 27.1764C16.808 31.121 20.6812 33.2596 24.1981 33.2596C26.3129 33.2596 26.5743 32.7844 26.5743 31.9764V28.9824C26.5743 28.0319 26.7644 27.8418 27.4535 27.8418C27.9525 27.8418 28.7842 28.0794 30.7565 29.9804C33.0139 32.2378 33.3941 33.2596 34.6535 33.2596H37.9802C38.9307 33.2596 39.406 32.7844 39.1208 31.8576C38.8119 30.9309 37.7426 29.5764 36.3169 27.9606C35.5327 27.0339 34.3684 26.0596 34.0357 25.5606C33.5367 24.919 33.6793 24.6339 34.0357 24.0873C34.0357 24.0636 38.0991 18.3606 38.503 16.4121Z" fill="white"/>
-                                </svg>
-                            </a>
-                            <a href="">
-                                <svg class="footer-seo" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                                    <path d="M43.0182 21.0264C43.022 21.0264 43.0249 21.0264 43.0288 21.0264C43.2966 21.0264 43.552 20.914 43.7334 20.7172C43.9177 20.5175 44.0089 20.2497 43.9849 19.979C43.0211 9.37771 34.6278 0.981549 24.0256 0.015789C23.7568 -0.00533099 23.486 0.0820291 23.2864 0.267309C23.0867 0.451629 22.9753 0.711789 22.9782 0.983469C23.1452 15.0724 25.0038 20.8295 43.0182 21.0264ZM43.0182 22.9732C25.0038 23.17 23.1462 28.9271 22.9792 43.0161C22.9763 43.2878 23.0876 43.548 23.2873 43.7323C23.4659 43.8964 23.6992 43.9876 23.9392 43.9876C23.968 43.9876 23.9977 43.9867 24.0265 43.9838C34.6288 43.018 43.022 34.6228 43.9849 24.0206C44.0089 23.7499 43.9187 23.482 43.7334 23.2824C43.5481 23.0827 43.2899 22.9838 43.0182 22.9732ZM19.91 0.0205891C9.34141 1.01419 0.975006 9.40843 0.0159657 19.9809C-0.00803427 20.2516 0.0822058 20.5195 0.267486 20.7192C0.448926 20.916 0.705246 21.0273 0.972126 21.0273C0.975966 21.0273 0.979806 21.0273 0.983646 21.0273C18.9385 20.8209 20.7923 15.0667 20.9612 0.987309C20.9641 0.715629 20.8518 0.454509 20.6521 0.270189C20.4505 0.0858691 20.1808 -0.00437088 19.91 0.0205891ZM0.982686 22.9723C0.684126 22.9387 0.449886 23.0807 0.266526 23.2804C0.0822059 23.4801 -0.0089942 23.748 0.0150058 24.0187C0.974046 34.5912 9.34141 42.9854 19.91 43.979C19.9398 43.9819 19.9705 43.9828 20.0003 43.9828C20.2403 43.9828 20.4726 43.8926 20.6512 43.7284C20.8508 43.5441 20.9632 43.283 20.9603 43.0113C20.7913 28.9329 18.9385 23.1787 0.982686 22.9723Z" fill="black"/>
-                                </svg>
-                            </a>
-                           
-                        </div>
-                    </div>
+                    <button class="button-text button-body">Вернуться на сайт 
+                        <span class="btn-circle">
+                            <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <g clip-path="url(#clip0_6900_492)">
+                                    <path d="M6 4L10 8L6 12" stroke="#0982C6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6900_492">
+                                        <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script/index.js"></script>
+
+        <div class="modal modal-application">
+            <div class="modal-content-application">
+                <div class="modal-content_fon"></div>
+                <button class="close-button_application close-button">
+                    <svg class="close-menu_icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <g clip-path="url(#clip0_6861_3319)">
+                            <path d="M30 10L10 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 10L30 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_6861_3319">
+                                <rect width="40" height="40" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <div class="modal-image">
+                    <img src="assest/main/fon-modal2.png" alt="Description" />
+                </div>
+                <div class="modal-text">
+                    <div class="txt-40 text-upp">Оставьте свой номер телефона и мы свяжемся с Вами, для дальнейшей консультации</div>
+                    <div class="modal-text_p">
+                        <input class="modal-input text-s-20 " type="text" placeholder="Имя (не обязательно)">
+                        <input class="modal-input text-s-20" type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <button class="button-text button-body">Вернуться на сайт 
+                        <span class="btn-circle">
+                            <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <g clip-path="url(#clip0_6900_492)">
+                                    <path d="M6 4L10 8L6 12" stroke="#0982C6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6900_492">
+                                        <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </button>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="agree" checked>
+                        <span class="checkmark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none">
+                                <path d="M1 6.5L4 9.5L12 1.5" stroke="#0982C6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="checkbox-container_text text-s-16 ">
+                            Нажимая кнопку "Отправить", Вы соглашаетесь с условиями 
+                        <a href="#" target="_blank">Политики конфиденциальности</a>
+                        </span>
+                        
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6-beta.19/jquery.inputmask.min.js"></script>
 </body>
+<style>
+    .container_block{
+        display: grid;
+        gap: 5rem;
+        margin-top: 15rem;
+    }
+</style>
+    <script src="script/index.js"></script>
 </html>

@@ -46,6 +46,93 @@ document.addEventListener("DOMContentLoaded", function () {
     console.warn("Swiper контейнер не найден: .specialists");
   }
 
+  var swiperContainer = document.querySelector(".programs-swiper");
+  if (swiperContainer) {
+    var swiper = new Swiper(".programs-swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: ".next-programs",
+        prevEl: ".prev-programs",
+      },
+      grabCursor: true,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
+      breakpoints: {
+        789: {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+        },
+        0: {
+          spaceBetween: 20,
+        },
+      },
+    });
+  } else {
+    console.warn("Swiper контейнер не найден: .programs-swiper");
+  }
+
+  var swiperContainer = document.querySelector(".certificates-swiper");
+  if (swiperContainer) {
+    var swiper = new Swiper(".certificates-swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: ".next-certificates",
+        prevEl: ".prev-certificates",
+      },
+      grabCursor: true,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
+      breakpoints: {
+        789: {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+        },
+        0: {
+          spaceBetween: 20,
+        },
+      },
+    });
+  } else {
+    console.warn("Swiper контейнер не найден: .certificates-swiper");
+  }
+
+  var swiperContainer = document.querySelector(".about-swiper");
+  if (swiperContainer) {
+    var swiper = new Swiper(".about-swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: ".next-about",
+        prevEl: ".prev-about",
+      },
+      grabCursor: true,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
+      breakpoints: {
+        789: {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+        },
+        0: {
+          spaceBetween: 20,
+        },
+      },
+    });
+  } else {
+    console.warn("Swiper контейнер не найден: .about-swiper");
+  }
+
   var myMap;
   window.onload = function () {
     ymaps.ready(init);
@@ -82,11 +169,192 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
+  //отзывы
   document.addEventListener("click", function (event) {
     if (event.target.classList.contains("read-more")) {
-      const container = event.target.closest(".review"); 
+      const container = event.target.closest(".review");
       container.querySelector(".short-text").style.display = "none";
       container.querySelector(".full-text").style.display = "block";
     }
+  });
+
+  //menu header
+  const menuModal = document.getElementById("menu-modal");
+  const closeButton = document.querySelector(".close-button");
+  const openModalButton = document.getElementById("openModalButton");
+  function openModal() {
+    if (menuModal) {
+      menuModal.style.display = "flex";
+    }
+  }
+  function closeModal() {
+    if (menuModal) {
+      menuModal.style.display = "none";
+    }
+  }
+  if (closeButton) {
+    closeButton.addEventListener("click", closeModal);
+  }
+  if (menuModal) {
+    window.addEventListener("click", (event) => {
+      if (event.target === menuModal) {
+        closeModal();
+      }
+    });
+  }
+  if (openModalButton) {
+    openModalButton.addEventListener("click", openModal);
+  }
+  const modalLinks = document.querySelectorAll(".menu-modal-links a");
+  modalLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      closeModal();
+    });
+  });
+
+  //tell
+  const openBtn = document.getElementById("openMenuWeb");
+  const closeBtn = document.getElementById("closeMenuWeb");
+  const menuweb = document.getElementById("menuweb");
+  if (openBtn && closeBtn && menuweb) {
+    openBtn.addEventListener("click", function () {
+      menuweb.style.display = "grid";
+    });
+
+    closeBtn.addEventListener("click", function () {
+      menuweb.style.display = "none";
+    });
+  } else {
+    console.log(
+      "Не найден один из элементов: openMenuWeb, closeMenuWeb или menuweb"
+    );
+  }
+
+  //modal 'Первый шаг сделан!'
+  const modalStep = document.querySelector(".menu-modal-step");
+  const openModalLast = document.getElementById("openModalLast");
+  const closeModalButton = document.querySelector(".close-button");
+  if (openModalLast && modalStep && closeModalButton) {
+    openModalLast.addEventListener("click", function () {
+      modalStep.style.display = "flex";
+    });
+
+    closeModalButton.addEventListener("click", function () {
+      modalStep.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+      if (event.target === modalStep) {
+        modalStep.style.display = "none";
+      }
+    });
+  } else {
+    console.log("Один или несколько элементов не найдены в DOM.");
+  }
+
+  //галерея About
+  const modalAbout = document.getElementById("modal");
+  const modalImage = document.getElementById("modalImage");
+  const modalCaption = document.getElementById("modalCaption");
+  const closeModalAbout = document.getElementById("closeModal");
+  const nextButton = document.getElementById("next");
+  const prevButton = document.getElementById("prev");
+
+  if (modalAbout && modalImage && modalCaption) {
+    let images = [];
+    let altTexts = [];
+    let currentIndex = 0;
+
+    document.querySelectorAll(".gallery-item").forEach((img, index) => {
+      images.push(img.src);
+      altTexts.push(img.alt);
+      img.addEventListener("click", function () {
+        currentIndex = index;
+        openModalAbout(images[currentIndex], altTexts[currentIndex]);
+      });
+    });
+    function openModalAbout(src, alt) {
+      modalAbout.style.display = "flex";
+      modalImage.src = src;
+      modalCaption.textContent = alt;
+    }
+    function closeModalWindow() {
+      modalAbout.style.display = "none";
+    }
+    function showNext() {
+      currentIndex = (currentIndex + 1) % images.length;
+      modalImage.src = images[currentIndex];
+      modalCaption.textContent = altTexts[currentIndex];
+    }
+    function showPrev() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      modalImage.src = images[currentIndex];
+      modalCaption.textContent = altTexts[currentIndex];
+    }
+    if (closeModalAbout)
+      closeModalAbout.addEventListener("click", closeModalWindow);
+    if (nextButton) nextButton.addEventListener("click", showNext);
+    if (prevButton) prevButton.addEventListener("click", showPrev);
+    document.addEventListener("keydown", function (event) {
+      if (modalAbout.style.display === "flex") {
+        if (event.key === "ArrowRight") showNext();
+        if (event.key === "ArrowLeft") showPrev();
+        if (event.key === "Escape") closeModalWindow();
+      }
+    });
+  }
+
+  //Консультации
+  const modalApplication = document.querySelector(".modal-application");
+  const openModalButtonApplication =
+    document.querySelector(".open-application");
+  const closeModalButtonApplication = document.querySelector(
+    ".close-button_application"
+  );
+
+  if (
+    openModalButtonApplication &&
+    modalApplication &&
+    closeModalButtonApplication
+  ) {
+    openModalButtonApplication.addEventListener("click", function () {
+      modalApplication.style.display = "flex";
+    });
+    closeModalButtonApplication.addEventListener("click", function () {
+      modalApplication.style.display = "none";
+    });
+    window.addEventListener("click", function (event) {
+      if (event.target === modalApplication) {
+        modalApplication.style.display = "none";
+      }
+    });
+  } else {
+    console.log("Один или несколько элементов не найдены в DOM.");
+  }
+  // maket
+  $(document).ready(function () {
+    $("#phone").inputmask("+7 (999) 999-99-99");
+  });
+
+  //section open
+  const buttons = document.querySelectorAll(".toggle-button");
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const targetId = button.getAttribute("data-target");
+      const section = document.getElementById(targetId);
+
+      if (section) {
+        const allSections = document.querySelectorAll(".nature");
+        allSections.forEach((sec) => {
+          if (sec !== section) {
+            sec.classList.add("hidden");
+          }
+        });
+        section.classList.toggle("hidden");
+        if (!section.classList.contains("hidden")) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    });
   });
 });
