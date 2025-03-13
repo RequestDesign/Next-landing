@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
         prevEl: "#prevEl",
       },
       grabCursor: true,
+      fadeEffect: {
+        crossFade: true,
+      },
       breakpoints: {
         789: {
           slidesPerView: "auto",
@@ -357,4 +360,62 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+// Получаем элементы модального окна
+const modalOtz = document.getElementById("modal-otz");
+const modalImageOtz = document.getElementById("modalImage-otz");
+const modalVideoOtz = document.getElementById("modalVideo-otz");
+const closeModalOtz = document.getElementById("closeModal-otz");
+
+// Получаем все изображения и видео в слайдах
+const imagesOtz = document.querySelectorAll(".rew-image");
+const videosOtz = document.querySelectorAll(".reviews-slide_description video");
+
+// Функция для открытия модального окна
+function openModalOtz(src, isVideo) {
+    modalOtz.style.display = "flex"; // Показываем модальное окно
+    if (isVideo) {
+        modalVideoOtz.src = src;
+        modalVideoOtz.style.display = "block";
+        modalImageOtz.style.display = "none";
+    } else {
+        modalImageOtz.src = src;
+        modalImageOtz.style.display = "block";
+        modalVideoOtz.style.display = "none";
+    }
+}
+
+// Обработчик кликов на изображениях
+imagesOtz.forEach((image) => {
+    image.addEventListener("click", () => {
+        openModalOtz(image.src, false);
+    });
 });
+
+// Обработчик кликов на видео
+videosOtz.forEach((video) => {
+    video.addEventListener("click", () => {
+        openModalOtz(video.currentSrc || video.src, true);
+    });
+});
+
+// Закрытие модального окна
+closeModalOtz.addEventListener("click", () => {
+    modalOtz.style.display = "none";
+    modalVideoOtz.pause(); // Останавливаем видео при закрытии
+    modalVideoOtz.src = ""; // Очищаем источник видео
+    modalImageOtz.src = ""; // Очищаем источник изображения
+});
+
+// Закрытие модального окна при клике вне его
+window.addEventListener("click", (event) => {
+    if (event.target === modalOtz) {
+        modalOtz.style.display = "none";
+        modalVideoOtz.pause(); // Останавливаем видео при закрытии
+        modalVideoOtz.src = ""; // Очищаем источник видео
+        modalImageOtz.src = ""; // Очищаем источник изображения
+    }
+});
+
+
+})
