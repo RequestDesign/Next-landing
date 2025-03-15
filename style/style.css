@@ -2533,6 +2533,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: right;
+  margin-bottom: 8rem;
 }
 
 .advantages-content_main {
@@ -2596,7 +2597,7 @@ header {
 }
 .hover-text_item {
   display: flex;
-  align-items: start;
+  align-items: center;
   gap: 1rem;
 }
 .hover-text_item .text-18 {

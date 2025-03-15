@@ -334,6 +334,7 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.log("Один или несколько элементов не найдены в DOM.");
   }
+  
   // maket
   $(document).ready(function () {
     $("#phone").inputmask("+7 (999) 999-99-99");
